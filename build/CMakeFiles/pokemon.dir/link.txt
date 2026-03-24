@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/pokemon.dir/src/battle.o CMakeFiles/pokemon.dir/src/trainer.o -o pokemon 

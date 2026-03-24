@@ -1,0 +1,3 @@
+/home/johnmasi/pokemon/build/CMakeFiles/pokemon.dir
+/home/johnmasi/pokemon/build/CMakeFiles/edit_cache.dir
+/home/johnmasi/pokemon/build/CMakeFiles/rebuild_cache.dir
