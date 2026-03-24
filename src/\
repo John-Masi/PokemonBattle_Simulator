@@ -1,0 +1,36 @@
+#include "battle.hpp"
+
+
+void Battle::swap_Pokemon(Pokemon& pokemon) {
+
+}
+
+std::optional<Move> Battle::select_Move() {
+
+}
+
+void Battle::speedCheck() {
+
+}
+
+void Battle::battle_End() {
+
+}
+
+std::variant<bool,b_State> Battle::turn() {
+
+}
+
+double Battle::dmgCalc(Pokemon& pokemon,Move& move) {
+  float stab{1.0};
+  // STAB check 
+  if(move.move_Type == pokemon.Species.types[0] or pokemon.Species.types[1]) {
+    stab = 1.5;
+  }
+  float levelCalc = (((2 * pokemon.level) * move.attk * pokemon.Species.attk / (pokemon.Species.def)) / 50.0) * stab;
+
+  
+  
+
+  return 0.0;
+}
