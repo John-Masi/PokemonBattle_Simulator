@@ -1,5 +1,4 @@
 #include "src/battle.cpp"
-#include "src/data.h"
 #include <iostream> 
 #include <cassert> 
 

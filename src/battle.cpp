@@ -14,6 +14,11 @@ std::optional<Move> Battle::select_Move() {
 
 }
 
+void Battle::displayMoves() {
+
+
+}
+
 void Battle::battle() {
   while(state != b_State::b_end) {
     std::string option{""};
