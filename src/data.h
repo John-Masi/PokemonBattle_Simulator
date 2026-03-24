@@ -24,8 +24,6 @@ namespace SpeciesTable {
 namespace MoveTable {
   // Move (name,type,pp,attk,accuracy,special)
   Move tackle{"Tackle",Type::normal,4,4,100};
-  Move tackle{"Tackle",Type::normal,4,4,100};
-  Move tackle{"Tackle",Type::normal,4,4,100};
 
 };
 
