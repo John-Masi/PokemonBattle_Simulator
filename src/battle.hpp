@@ -34,7 +34,7 @@ class Battle {
         }
       
         void turn();
-        void battle();
+        b_State battle();
         void swap_Pokemon(Pokemon& pokemon);
         std::optional<Move> select_Move();
         float dmgCalc(Pokemon& a_pkmn,Pokemon& t_pkmn,Move& move); 
