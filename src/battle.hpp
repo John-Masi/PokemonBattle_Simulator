@@ -1,7 +1,6 @@
 #include <variant> 
 #include <optional> 
 #include <iostream>
-#include <print> 
 #include "trainer.cpp"
 #include "data.h"
 
@@ -30,21 +29,13 @@ class Battle {
             p_1 = &t1.getLeader();
             p_2 = &t1.getLeader();
         }
-        ~Battle() {
-        }
+        ~Battle() = default;
       
-<<<<<<< HEAD
         void turn();
-        b_State battle();
-=======
-        b_State turn();
         void battle();
->>>>>>> 0cd0a6f (Build system)
         void swap_Pokemon(Pokemon& pokemon);
         std::optional<Move> select_Move();
         float dmgCalc(Pokemon& a_pkmn,Pokemon& t_pkmn,Move& move); 
-        bool feintCheck(Trainer& trainer);
-        void displayMoves();
 };
 
 #endif 

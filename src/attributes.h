@@ -1,10 +1,10 @@
 #include <cstdint>
 #include <utility> 
 #include <string> 
-#include <array>
-#include <optional>
+#include <vector>
 #include <string_view>
-#include <unordered_map> 
+#include <algorithm>
+#include <iostream> 
 
 #ifndef ATTRIBUTES_H
 #define ATTRIBUTES_H
@@ -51,7 +51,7 @@ enum Nature {
 };
 
 struct Species {
-  std::string_view name{};
+  std::string name;
   Type types[2];
   uint16_t hp{};
   uint16_t attk{};
@@ -60,31 +60,32 @@ struct Species {
   uint16_t SpDef{};
   uint16_t SpAttk{};
 
-  Species(std::string name,uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk) 
+  Species(const std::string& name,uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk) 
   : name(name) ,hp(hp), attk(attk), def(def), speed(speed), SpDef(SpDef), SpAttk(SpAttk){
 
   }
 };
 
 struct Move {
-  std::string_view move_Name;
+  std::string move_Name;
   Type move_Type{};
   uint8_t pp{};
   uint8_t attk{};
   uint8_t accuracy{};
 
-  explicit Move(std::string move_Name,Type move_Type,uint8_t pp,uint8_t attk,uint8_t accuracy) 
+  explicit Move(const std::string& move_Name,Type move_Type,uint8_t pp,uint8_t attk,uint8_t accuracy) 
   : move_Name(move_Name), move_Type(move_Type), pp(pp), attk(attk), accuracy(accuracy){}
 };
 
 struct Pokemon {
   Species sp;
-  std::array<std::optional<Move>, 4> moves;
-  uint16_t level;
-  uint16_t exp;
+  std::vector<Move> moves;
+  uint16_t level{};
+  uint16_t exp{};
   Pokemon(Species& sp): sp(sp) {}
   void natureMath(uint16_t stat_1,uint16_t stat_2);
   void learnMove(Move& m);
+  void printMoves();
 };
 
 void Pokemon::natureMath(uint16_t stat_1,uint16_t stat_2){
@@ -92,7 +93,15 @@ void Pokemon::natureMath(uint16_t stat_1,uint16_t stat_2){
   stat_2 = stat_2 * (9/10);
 }
 void Pokemon::learnMove(Move& m) {
-  moves[0] = m;
+  moves.push_back(m);
+}
+
+void Pokemon::printMoves() {
+  std::for_each(moves.begin(),moves.end(),[](Move m)  {
+    std::cout << "PP: " << static_cast<unsigned int>(m.pp) << 
+      " Name: " << m.move_Name;
+
+  });
 }
 
 struct Dmg {

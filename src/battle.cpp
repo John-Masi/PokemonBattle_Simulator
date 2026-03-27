@@ -11,19 +11,13 @@ void Battle::swap_Pokemon(Pokemon& pokemon) {
 }
 
 std::optional<Move> Battle::select_Move() {
-
-}
-
-void Battle::displayMoves() {
-
-
+  return std::nullopt;
 }
 
 void Battle::battle() {
   while(state != b_State::b_end) {
     std::string option{""};
     std::cout << "enter a move" << "\n";
-    
     std::cin >> option;
     if(option == "end") {
       state = b_State::b_end;
@@ -31,19 +25,18 @@ void Battle::battle() {
   }
 }
 
-bool Battle::feintCheck(Trainer& trainer) {
-
-}
-
-b_State Battle::turn() {
+void Battle::turn() {
   // Check if either trainers entire team is fainted or not 
   switch(state) {
     case(b_State::p_turn) : {
-      // Handle if a pokemon feints we swap into a new one
-      return b_State::p_turn;
+      std::cout << "Please select the move you would like to use";
+      p_1->printMoves();
+      std::string moveSelected;
+      std::cin >> moveSelected;
+      // Check if move has > 0 pp 
     };
     case(b_State::t_turn) : {
-      return b_State::t_turn;
+      // System to decide the trainers move
     };
   }
 }

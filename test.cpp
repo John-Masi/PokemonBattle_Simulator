@@ -4,11 +4,10 @@
 
 int main() {
       Trainer t0(100);
-      Pokemon p{SpeciesTable::squirtle};
-      t0.addMember(p);
       Trainer t1(100);
+      Pokemon p{SpeciesTable::dragonite};
       t1.addMember(p);
-      
-      Battle b{t0,t1};
-      b.battle();
+      p.learnMove(MoveTable::tackle);
+      p.printMoves();
 }
+

@@ -1,6 +1,6 @@
 #include "attributes.h"
-#include <array>
-#include <optional>
+#include <vector> 
+#include <algorithm>
 
 #ifndef TRAINER_HPP
 #define TRAINER_HPP
@@ -16,9 +16,11 @@ class Trainer {
 
       void addMember(Pokemon& pokemon);
       Pokemon& getLeader();
+      void printTeam();
+      bool hasFainted();
 
       mutable int money{};
-      std::array<std::optional<Pokemon>,6> team;
+      std::vector<Pokemon> team;
 
 };
 
