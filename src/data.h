@@ -9,7 +9,7 @@ namespace SpeciesTable {
   Species bulbasuar{"bulbasaur",45,49,49,45,65,65,Type::grass,Type::poison};
   Species ivysaur{"ivysaur",60,62,63,60,80,80,Type::grass,Type::poison};
   Species venasaur{"venasaur",80,82,83,80,100,100,Type::grass,Type::poison};
-  Species squirtle{"squirtle",44,48,65,43,64,50,Type::dragon};
+  Species squirtle{"squirtle",44,48,65,43,64,50,Type::water};
   Species wartortle{"wartortle",59,63,80,58,80,65,Type::water};
   Species blastoise{"blastoise",79,83,100,78,105,85,Type::water};
   Species charmander{"charmander",39,52,43,65,50,60,Type::fire};

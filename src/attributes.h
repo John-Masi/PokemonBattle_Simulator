@@ -159,7 +159,6 @@ struct Dmg {
   explicit Dmg(const Pokemon& a_pkmn,const Pokemon& t_pkmn,const Move& move) : a_pkmn(a_pkmn), t_pkmn(t_pkmn), move(move){
     // Type effective Calculation
     type = modifier(move.move_Type,t_pkmn.sp.types[0]);
-    std::cout << type;
     
     // STAB Caclulation 
     if(a_pkmn.sp.types[0] == move.move_Type || a_pkmn.sp.types[1] == move.move_Type) {
