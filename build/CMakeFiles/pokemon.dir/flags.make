@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/johnmasi/pokemon/src
 
-CXX_FLAGS = 
+CXX_FLAGS = -std=gnu++20
 

@@ -1,4 +1,4 @@
-set(CMAKE_CXX STANDARD 17)
+set(CMAKE_CXX STANDARD 20)
 set(CMAKE_CXX STANDARD_REQUIRED ON)
 
 set(SOURCES
@@ -14,3 +14,4 @@ set(SOURCES
 
 add_executable(pokemon ${SOURCES})
 target_include_directories(pokemon PRIVATE ${CMAKE_SOURCE_DIR}/src)
+target_compile_features(pokemon PRIVATE cxx_std_20)

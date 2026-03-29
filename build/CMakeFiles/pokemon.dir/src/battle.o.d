@@ -25,9 +25,12 @@ CMakeFiles/pokemon.dir/src/battle.o: \
  /usr/include/c++/13/bits/concept_check.h \
  /usr/include/c++/13/debug/assertions.h \
  /usr/include/c++/13/bits/stl_iterator_base_types.h \
+ /usr/include/c++/13/bits/iterator_concepts.h \
+ /usr/include/c++/13/concepts /usr/include/c++/13/bits/ptr_traits.h \
+ /usr/include/c++/13/bits/ranges_cmp.h \
  /usr/include/c++/13/bits/stl_construct.h /usr/include/c++/13/new \
  /usr/include/c++/13/bits/exception.h /usr/include/c++/13/bits/utility.h \
- /usr/include/c++/13/ext/aligned_buffer.h /usr/include/c++/13/optional \
+ /usr/include/c++/13/compare /usr/include/c++/13/optional \
  /usr/include/c++/13/exception /usr/include/c++/13/bits/exception_ptr.h \
  /usr/include/c++/13/bits/cxxabi_init_exception.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
@@ -96,7 +99,6 @@ CMakeFiles/pokemon.dir/src/battle.o: \
  /usr/include/c++/13/bits/ostream_insert.h \
  /usr/include/c++/13/bits/cxxabi_forced.h \
  /usr/include/c++/13/bits/stl_iterator.h \
- /usr/include/c++/13/bits/ptr_traits.h \
  /usr/include/c++/13/bits/stl_function.h \
  /usr/include/c++/13/backward/binders.h \
  /usr/include/c++/13/bits/stl_algobase.h \
@@ -107,6 +109,8 @@ CMakeFiles/pokemon.dir/src/battle.o: \
  /usr/include/c++/13/bits/basic_string.h \
  /usr/include/c++/13/ext/alloc_traits.h \
  /usr/include/c++/13/bits/alloc_traits.h /usr/include/c++/13/string_view \
+ /usr/include/c++/13/bits/ranges_base.h \
+ /usr/include/c++/13/bits/max_size_type.h /usr/include/c++/13/numbers \
  /usr/include/c++/13/bits/string_view.tcc \
  /usr/include/c++/13/ext/string_conversions.h /usr/include/c++/13/cstdlib \
  /usr/include/stdlib.h /usr/include/x86_64-linux-gnu/bits/waitflags.h \
@@ -135,6 +139,7 @@ CMakeFiles/pokemon.dir/src/battle.o: \
  /usr/include/c++/13/bits/memory_resource.h /usr/include/c++/13/cstddef \
  /usr/include/c++/13/bits/uses_allocator.h \
  /usr/include/c++/13/bits/uses_allocator_args.h /usr/include/c++/13/tuple \
+ /usr/include/c++/13/bits/ranges_util.h \
  /usr/include/c++/13/bits/locale_classes.tcc \
  /usr/include/c++/13/system_error \
  /usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h \
@@ -166,6 +171,10 @@ CMakeFiles/pokemon.dir/src/battle.o: \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
  /usr/include/c++/13/bits/stl_tempbuf.h \
+ /usr/include/c++/13/bits/ranges_algo.h \
+ /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13/pstl/execution_defs.h \
+ /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/ranges \
+ /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
+ /usr/include/c++/13/span /usr/include/c++/13/array \
  /home/johnmasi/pokemon/src/data.h

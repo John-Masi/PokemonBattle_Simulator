@@ -108,6 +108,7 @@ CMakeFiles/pokemon.dir/src/battle.o: /home/johnmasi/pokemon/src/battle.cpp \
   /usr/include/c++/13/pstl/execution_defs.h \
   /usr/include/c++/13/pstl/glue_algorithm_defs.h \
   /usr/include/c++/13/pstl/pstl_config.h \
+  /usr/include/c++/13/ranges \
   /usr/include/c++/13/stdexcept \
   /usr/include/c++/13/streambuf \
   /usr/include/c++/13/string \
@@ -542,6 +543,8 @@ CMakeFiles/pokemon.dir/src/trainer.o: /home/johnmasi/pokemon/src/trainer.cpp \
 
 /usr/include/stdc-predef.h:
 
+/usr/include/sched.h:
+
 /usr/include/c++/13/bits/stl_construct.h:
 
 /usr/include/c++/13/bits/stl_algobase.h:
@@ -828,11 +831,15 @@ CMakeFiles/pokemon.dir/src/trainer.o: /home/johnmasi/pokemon/src/trainer.cpp \
 
 /usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
-/usr/include/sched.h:
-
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/c++/13/ranges:
+
+/usr/include/c++/13/bits/streambuf.tcc:
+
+/usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
@@ -849,10 +856,6 @@ CMakeFiles/pokemon.dir/src/trainer.o: /home/johnmasi/pokemon/src/trainer.cpp \
 /usr/include/c++/13/bits/vector.tcc:
 
 /usr/include/c++/13/variant:
-
-/usr/include/c++/13/bits/streambuf.tcc:
-
-/usr/include/endian.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
 

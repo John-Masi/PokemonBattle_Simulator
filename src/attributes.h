@@ -55,7 +55,10 @@ float modifier(T t1,T t2) {
 }
 
 enum Type {
-  normal,
+  // Do not change none to anything but zero will mess up the type chart matrix when calculating type effectivness 
+  // It is here for monotype pokemon 
+  none = 0,
+  normal = 0,
   fire,
   water,
   grass,
@@ -89,7 +92,7 @@ struct Species {
   uint16_t SpDef{};
   uint16_t SpAttk{};
 
-  Species(const std::string& name,uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::normal,Type t2 = Type::normal) 
+  Species(const std::string& name,uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none) 
   : name(name) ,hp(hp), attk(attk), def(def), speed(speed), SpDef(SpDef), SpAttk(SpAttk){
     types[0] = t1;
     types[1] = t2;
