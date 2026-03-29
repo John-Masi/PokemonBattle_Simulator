@@ -1,4 +1,4 @@
-CMakeFiles/pokemon.dir/src/battle.o: \
+CMakeFiles/pokemon.dir/src/battle.cpp.o: \
  /home/johnmasi/pokemon/src/battle.cpp /usr/include/stdc-predef.h \
  /home/johnmasi/pokemon/src/battle.hpp /usr/include/c++/13/variant \
  /usr/include/c++/13/initializer_list \

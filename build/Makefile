@@ -129,35 +129,77 @@ pokemon/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/build
 .PHONY : pokemon/fast
 
-# target to build an object file
-src/battle.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/battle.o
+src/battle.o: src/battle.cpp.o
 .PHONY : src/battle.o
 
-# target to preprocess a source file
-src/battle.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/battle.i
+# target to build an object file
+src/battle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/battle.cpp.o
+.PHONY : src/battle.cpp.o
+
+src/battle.i: src/battle.cpp.i
 .PHONY : src/battle.i
 
-# target to generate assembly for a file
-src/battle.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/battle.s
+# target to preprocess a source file
+src/battle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/battle.cpp.i
+.PHONY : src/battle.cpp.i
+
+src/battle.s: src/battle.cpp.s
 .PHONY : src/battle.s
 
-# target to build an object file
-src/trainer.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/trainer.o
+# target to generate assembly for a file
+src/battle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/battle.cpp.s
+.PHONY : src/battle.cpp.s
+
+src/trainer.o: src/trainer.cpp.o
 .PHONY : src/trainer.o
 
-# target to preprocess a source file
-src/trainer.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/trainer.i
+# target to build an object file
+src/trainer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/trainer.cpp.o
+.PHONY : src/trainer.cpp.o
+
+src/trainer.i: src/trainer.cpp.i
 .PHONY : src/trainer.i
 
-# target to generate assembly for a file
-src/trainer.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/trainer.s
+# target to preprocess a source file
+src/trainer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/trainer.cpp.i
+.PHONY : src/trainer.cpp.i
+
+src/trainer.s: src/trainer.cpp.s
 .PHONY : src/trainer.s
+
+# target to generate assembly for a file
+src/trainer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/src/trainer.cpp.s
+.PHONY : src/trainer.cpp.s
+
+test.o: test.cpp.o
+.PHONY : test.o
+
+# target to build an object file
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/test.cpp.o
+.PHONY : test.cpp.o
+
+test.i: test.cpp.i
+.PHONY : test.i
+
+# target to preprocess a source file
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/test.cpp.i
+.PHONY : test.cpp.i
+
+test.s: test.cpp.s
+.PHONY : test.s
+
+# target to generate assembly for a file
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -174,6 +216,9 @@ help:
 	@echo "... src/trainer.o"
 	@echo "... src/trainer.i"
 	@echo "... src/trainer.s"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

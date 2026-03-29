@@ -69,47 +69,63 @@ include CMakeFiles/pokemon.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/pokemon.dir/flags.make
 
-CMakeFiles/pokemon.dir/src/battle.o: CMakeFiles/pokemon.dir/flags.make
-CMakeFiles/pokemon.dir/src/battle.o: /home/johnmasi/pokemon/src/battle.cpp
-CMakeFiles/pokemon.dir/src/battle.o: CMakeFiles/pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pokemon.dir/src/battle.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pokemon.dir/src/battle.o -MF CMakeFiles/pokemon.dir/src/battle.o.d -o CMakeFiles/pokemon.dir/src/battle.o -c /home/johnmasi/pokemon/src/battle.cpp
+CMakeFiles/pokemon.dir/test.cpp.o: CMakeFiles/pokemon.dir/flags.make
+CMakeFiles/pokemon.dir/test.cpp.o: /home/johnmasi/pokemon/test.cpp
+CMakeFiles/pokemon.dir/test.cpp.o: CMakeFiles/pokemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/pokemon.dir/test.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pokemon.dir/test.cpp.o -MF CMakeFiles/pokemon.dir/test.cpp.o.d -o CMakeFiles/pokemon.dir/test.cpp.o -c /home/johnmasi/pokemon/test.cpp
 
-CMakeFiles/pokemon.dir/src/battle.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pokemon.dir/src/battle.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnmasi/pokemon/src/battle.cpp > CMakeFiles/pokemon.dir/src/battle.i
+CMakeFiles/pokemon.dir/test.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pokemon.dir/test.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnmasi/pokemon/test.cpp > CMakeFiles/pokemon.dir/test.cpp.i
 
-CMakeFiles/pokemon.dir/src/battle.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pokemon.dir/src/battle.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnmasi/pokemon/src/battle.cpp -o CMakeFiles/pokemon.dir/src/battle.s
+CMakeFiles/pokemon.dir/test.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pokemon.dir/test.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnmasi/pokemon/test.cpp -o CMakeFiles/pokemon.dir/test.cpp.s
 
-CMakeFiles/pokemon.dir/src/trainer.o: CMakeFiles/pokemon.dir/flags.make
-CMakeFiles/pokemon.dir/src/trainer.o: /home/johnmasi/pokemon/src/trainer.cpp
-CMakeFiles/pokemon.dir/src/trainer.o: CMakeFiles/pokemon.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pokemon.dir/src/trainer.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pokemon.dir/src/trainer.o -MF CMakeFiles/pokemon.dir/src/trainer.o.d -o CMakeFiles/pokemon.dir/src/trainer.o -c /home/johnmasi/pokemon/src/trainer.cpp
+CMakeFiles/pokemon.dir/src/battle.cpp.o: CMakeFiles/pokemon.dir/flags.make
+CMakeFiles/pokemon.dir/src/battle.cpp.o: /home/johnmasi/pokemon/src/battle.cpp
+CMakeFiles/pokemon.dir/src/battle.cpp.o: CMakeFiles/pokemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/pokemon.dir/src/battle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pokemon.dir/src/battle.cpp.o -MF CMakeFiles/pokemon.dir/src/battle.cpp.o.d -o CMakeFiles/pokemon.dir/src/battle.cpp.o -c /home/johnmasi/pokemon/src/battle.cpp
 
-CMakeFiles/pokemon.dir/src/trainer.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pokemon.dir/src/trainer.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnmasi/pokemon/src/trainer.cpp > CMakeFiles/pokemon.dir/src/trainer.i
+CMakeFiles/pokemon.dir/src/battle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pokemon.dir/src/battle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnmasi/pokemon/src/battle.cpp > CMakeFiles/pokemon.dir/src/battle.cpp.i
 
-CMakeFiles/pokemon.dir/src/trainer.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pokemon.dir/src/trainer.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnmasi/pokemon/src/trainer.cpp -o CMakeFiles/pokemon.dir/src/trainer.s
+CMakeFiles/pokemon.dir/src/battle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pokemon.dir/src/battle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnmasi/pokemon/src/battle.cpp -o CMakeFiles/pokemon.dir/src/battle.cpp.s
+
+CMakeFiles/pokemon.dir/src/trainer.cpp.o: CMakeFiles/pokemon.dir/flags.make
+CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
+CMakeFiles/pokemon.dir/src/trainer.cpp.o: CMakeFiles/pokemon.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/pokemon.dir/src/trainer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/pokemon.dir/src/trainer.cpp.o -MF CMakeFiles/pokemon.dir/src/trainer.cpp.o.d -o CMakeFiles/pokemon.dir/src/trainer.cpp.o -c /home/johnmasi/pokemon/src/trainer.cpp
+
+CMakeFiles/pokemon.dir/src/trainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/pokemon.dir/src/trainer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/johnmasi/pokemon/src/trainer.cpp > CMakeFiles/pokemon.dir/src/trainer.cpp.i
+
+CMakeFiles/pokemon.dir/src/trainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/pokemon.dir/src/trainer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/johnmasi/pokemon/src/trainer.cpp -o CMakeFiles/pokemon.dir/src/trainer.cpp.s
 
 # Object files for target pokemon
 pokemon_OBJECTS = \
-"CMakeFiles/pokemon.dir/src/battle.o" \
-"CMakeFiles/pokemon.dir/src/trainer.o"
+"CMakeFiles/pokemon.dir/test.cpp.o" \
+"CMakeFiles/pokemon.dir/src/battle.cpp.o" \
+"CMakeFiles/pokemon.dir/src/trainer.cpp.o"
 
 # External object files for target pokemon
 pokemon_EXTERNAL_OBJECTS =
 
-pokemon: CMakeFiles/pokemon.dir/src/battle.o
-pokemon: CMakeFiles/pokemon.dir/src/trainer.o
+pokemon: CMakeFiles/pokemon.dir/test.cpp.o
+pokemon: CMakeFiles/pokemon.dir/src/battle.cpp.o
+pokemon: CMakeFiles/pokemon.dir/src/trainer.cpp.o
 pokemon: CMakeFiles/pokemon.dir/build.make
 pokemon: CMakeFiles/pokemon.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable pokemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable pokemon"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/pokemon.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

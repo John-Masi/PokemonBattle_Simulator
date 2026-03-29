@@ -1,7 +1,6 @@
-CMakeFiles/pokemon.dir/src/battle.o: \
- /home/johnmasi/pokemon/src/battle.cpp /usr/include/stdc-predef.h \
- /home/johnmasi/pokemon/src/battle.hpp /usr/include/c++/13/variant \
- /usr/include/c++/13/initializer_list \
+CMakeFiles/pokemon.dir/test.o: /home/johnmasi/pokemon/test.cpp \
+ /usr/include/stdc-predef.h /home/johnmasi/pokemon/src/battle.hpp \
+ /usr/include/c++/13/variant /usr/include/c++/13/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -175,4 +174,6 @@ CMakeFiles/pokemon.dir/src/battle.o: \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h /usr/include/c++/13/ranges \
  /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/c++/13/span /usr/include/c++/13/array
+ /usr/include/c++/13/span /usr/include/c++/13/array \
+ /home/johnmasi/pokemon/src/trainer.hpp /home/johnmasi/pokemon/src/data.h \
+ /usr/include/c++/13/cassert /usr/include/assert.h

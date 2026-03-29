@@ -10,7 +10,7 @@
 #define ATTRIBUTES_H
 
 namespace Typechart {
-  float typechart[17][17] = {
+  static constexpr float typechart[17][17] = {
     // Normal type 
     {1,2,1,1,1,1,1,1,1,1,1,0.5,0,1,1},
     // Fire type 
@@ -50,7 +50,7 @@ namespace Typechart {
 };
 
 template <typename T>
-float modifier(T t1,T t2) {
+static float modifier(T t1,T t2) {
   return Typechart::typechart[t1][t2];
 }
 
@@ -123,11 +123,11 @@ struct Pokemon {
   void printMoves();
 };
 
-void Pokemon::natureMath(uint16_t stat_1,uint16_t stat_2){
+inline void Pokemon::natureMath(uint16_t stat_1,uint16_t stat_2){
   stat_1 = stat_1 * (11/10);
   stat_2 = stat_2 * (9/10);
 }
-void Pokemon::learnMove(Move& m) {
+inline void Pokemon::learnMove(Move& m) {
   if(moves.size() > 3) {
     std::cout << "exceeded move limit";
     // Handle replacing a move when we are full of moves
@@ -137,9 +137,9 @@ void Pokemon::learnMove(Move& m) {
   }
 }
 
-void Pokemon::printMoves() {
+inline void Pokemon::printMoves() {
   std::cout << moves.capacity() << "\n";
-  std::for_each(moves.begin(),moves.end(),[](Move m)  {
+  std::for_each(moves.begin(),moves.end(),[](const Move& m)  {
     std::cout << m.move_Type <<" PP: " << static_cast<unsigned int>(m.pp) << 
       " Name: " << m.move_Name << "\n";
     

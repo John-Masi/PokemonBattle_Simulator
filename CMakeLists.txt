@@ -1,17 +1,9 @@
-set(CMAKE_CXX STANDARD 20)
-set(CMAKE_CXX STANDARD_REQUIRED ON)
-
-set(SOURCES
-  src/data.h
-  src/attributes.h
-  src/battle.hpp
-  src/battle.cpp
-  src/trainer.hpp
-  src/trainer.cpp
-)
+cmake_minimum_required(VERSION 3.28)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+project(pokemon)
 
 
-
-add_executable(pokemon ${SOURCES})
-target_include_directories(pokemon PRIVATE ${CMAKE_SOURCE_DIR}/src)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(pokemon test.cpp ${SOURCES})
 target_compile_features(pokemon PRIVATE cxx_std_20)

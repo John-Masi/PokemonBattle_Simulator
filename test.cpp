@@ -1,4 +1,6 @@
-#include "src/battle.cpp"
+#include "src/battle.hpp"
+#include "src/trainer.hpp"
+#include "src/data.h"
 #include <iostream> 
 #include <cassert> 
 
@@ -24,7 +26,5 @@ int main() {
       d_1.learnMove(MoveTable::dragon_breath);
       Dmg d{d_1,d_2,d_1.moves[0]};
       assert(d.stab = 2);
-
-      //p.printMoves();
 }
 

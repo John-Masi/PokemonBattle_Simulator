@@ -1,8 +1,7 @@
 #include <variant> 
 #include <optional> 
 #include <iostream>
-#include "trainer.cpp"
-#include "data.h"
+#include "trainer.hpp"
 
 #ifndef BATTLE_HPP
 #define BATTLE_HPP
