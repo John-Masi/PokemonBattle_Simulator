@@ -31,9 +31,9 @@ void Battle::turn() {
     case(b_State::p_turn) : {
       std::cout << "Please select the move you would like to use";
       p_1->printMoves();
-      std::string moveSelected;
+      int moveSelected;
       std::cin >> moveSelected;
-      // Check if move has > 0 pp 
+      Dmg dmgCalc(*p_1,*p_2,p_1->moves[moveSelected]);
     };
     case(b_State::t_turn) : {
       // System to decide the trainers move

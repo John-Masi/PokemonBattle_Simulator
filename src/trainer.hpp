@@ -1,6 +1,7 @@
 #include "attributes.h"
 #include <vector> 
 #include <algorithm>
+#include <ranges> 
 
 #ifndef TRAINER_HPP
 #define TRAINER_HPP
@@ -10,7 +11,9 @@ class Trainer {
     public:
       
 
-      Trainer(int money) : money(money) {};
+      Trainer(int money) : money(money) {
+        team.reserve(6);
+      };
       ~Trainer() = default;
 
 

@@ -5,12 +5,21 @@ Pokemon& Trainer::getLeader() {
 
 }
 
-bool hasFainted() {
+bool Trainer::hasFainted() {
+  int faintCount = std::ranges::count_if(team.begin(),team.end(), [](const Pokemon& p) { return p.sp.hp == 0; });
+  if(faintCount == 6) {
+    return true;    
+  }
   return false;
 }
 
 void Trainer::addMember(Pokemon& pokemon) {
-  team.emplace_back(pokemon);
+  if(team.size() > 5 ){
+
+  }
+  else {
+    team.emplace_back(pokemon.sp);
+  }
 };
 
 void Trainer::printTeam() {
