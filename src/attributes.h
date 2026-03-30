@@ -83,7 +83,6 @@ enum Nature {
 };
 
 struct Species {
-  std::string name;
   Type types[2];
   uint16_t hp{};
   uint16_t attk{};
@@ -92,8 +91,8 @@ struct Species {
   uint16_t SpDef{};
   uint16_t SpAttk{};
 
-  Species(const std::string& name,uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none) 
-  : name(name) ,hp(hp), attk(attk), def(def), speed(speed), SpDef(SpDef), SpAttk(SpAttk){
+  constexpr Species(uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none) 
+  : hp(hp), attk(attk), def(def), speed(speed), SpDef(SpDef), SpAttk(SpAttk){
     types[0] = t1;
     types[1] = t2;
   }
@@ -115,7 +114,7 @@ struct Pokemon {
   std::vector<Move> moves;
   uint16_t level{};
   uint16_t exp{};
-  Pokemon(Species& sp): sp(sp) {
+  constexpr Pokemon(const Species& sp): sp(sp) {
     moves.reserve(4);
   }
   void natureMath(uint16_t stat_1,uint16_t stat_2);

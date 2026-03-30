@@ -24,6 +24,6 @@ void Trainer::addMember(Pokemon& pokemon) {
 
 void Trainer::printTeam() {
   std::for_each(team.begin(),team.end(),
-    [](const Pokemon& p) { std::cout << p.sp.name; });
+    [](const Pokemon& p) { std::cout << p.level; });
 }
 

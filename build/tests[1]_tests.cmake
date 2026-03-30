@@ -1,0 +1,5 @@
+add_test([=[TSizeTest.BasicAssertions]=]  /home/johnmasi/pokemon/build/tests [==[--gtest_filter=TSizeTest.BasicAssertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[TSizeTest.BasicAssertions]=]  PROPERTIES WORKING_DIRECTORY /home/johnmasi/pokemon/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+add_test([=[FaintTest.BasicAssertions]=]  /home/johnmasi/pokemon/build/tests [==[--gtest_filter=FaintTest.BasicAssertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[FaintTest.BasicAssertions]=]  PROPERTIES WORKING_DIRECTORY /home/johnmasi/pokemon/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
+set(  tests_TESTS TSizeTest.BasicAssertions FaintTest.BasicAssertions)

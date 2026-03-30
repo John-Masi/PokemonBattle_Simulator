@@ -1,6 +1,6 @@
-#include <variant> 
 #include <optional> 
 #include <iostream>
+#include "attributes.h"
 #include "trainer.hpp"
 
 #ifndef BATTLE_HPP
@@ -34,7 +34,7 @@ class Battle {
         void battle();
         void swap_Pokemon(Pokemon& pokemon);
         std::optional<Move> select_Move();
-        float dmgCalc(Pokemon& a_pkmn,Pokemon& t_pkmn,Move& move); 
+        float dmgCalc(Pokemon& a_pkmn,Pokemon& t_pkmn,Move& move);
 };
 
 #endif 

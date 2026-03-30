@@ -1,5 +1,5 @@
+#include <vector>
 #include "attributes.h"
-#include <vector> 
 #include <algorithm>
 #include <ranges> 
 
@@ -11,7 +11,7 @@ class Trainer {
     public:
       
 
-      Trainer(int money) : money(money) {
+      Trainer(const int money) : money(money) {
         team.reserve(6);
       };
       ~Trainer() = default;

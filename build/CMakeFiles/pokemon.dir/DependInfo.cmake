@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/johnmasi/pokemon/main.cpp" "CMakeFiles/pokemon.dir/main.cpp.o" "gcc" "CMakeFiles/pokemon.dir/main.cpp.o.d"
   "/home/johnmasi/pokemon/src/battle.cpp" "CMakeFiles/pokemon.dir/src/battle.cpp.o" "gcc" "CMakeFiles/pokemon.dir/src/battle.cpp.o.d"
   "/home/johnmasi/pokemon/src/trainer.cpp" "CMakeFiles/pokemon.dir/src/trainer.cpp.o" "gcc" "CMakeFiles/pokemon.dir/src/trainer.cpp.o.d"
-  "/home/johnmasi/pokemon/test.cpp" "CMakeFiles/pokemon.dir/test.cpp.o" "gcc" "CMakeFiles/pokemon.dir/test.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

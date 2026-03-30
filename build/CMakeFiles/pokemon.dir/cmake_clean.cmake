@@ -1,10 +1,10 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/pokemon.dir/main.cpp.o"
+  "CMakeFiles/pokemon.dir/main.cpp.o.d"
   "CMakeFiles/pokemon.dir/src/battle.cpp.o"
   "CMakeFiles/pokemon.dir/src/battle.cpp.o.d"
   "CMakeFiles/pokemon.dir/src/trainer.cpp.o"
   "CMakeFiles/pokemon.dir/src/trainer.cpp.o.d"
-  "CMakeFiles/pokemon.dir/test.cpp.o"
-  "CMakeFiles/pokemon.dir/test.cpp.o.d"
   "pokemon"
   "pokemon.pdb"
 )

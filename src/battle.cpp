@@ -16,7 +16,7 @@ std::optional<Move> Battle::select_Move() {
 
 void Battle::battle() {
   while(state != b_State::b_end) {
-    std::string option{""};
+    std::string option;
     std::cout << "enter a move" << "\n";
     std::cin >> option;
     if(option == "end") {
