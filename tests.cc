@@ -14,7 +14,7 @@ TEST(FaintTest,BasicAssertions) {
       t2.team.emplace_back(SpeciesTable::dragonite);
   }
   for(auto& n: t2.team) {
-      n.sp.hp = 0;
+      n.sp.stats[0] = 0;
   }
   EXPECT_EQ(t2.hasFainted(),true);
 }

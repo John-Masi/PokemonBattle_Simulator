@@ -6,7 +6,7 @@ Pokemon& Trainer::getLeader() {
 }
 
 bool Trainer::hasFainted() {
-  int faintCount = std::ranges::count_if(team.begin(),team.end(), [](const Pokemon& p) { return p.sp.hp == 0; });
+  int faintCount = std::ranges::count_if(team.begin(),team.end(), [](const Pokemon& p) { return p.sp.stats[0] == 0; });
   if(faintCount == 6) {
     return true;    
   }

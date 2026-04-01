@@ -17,7 +17,7 @@ namespace SpeciesTable {
   constexpr static Species caterpie{45,30,35,45,20,20,Type::bug};
   constexpr static Species metapod{50,20,55,30,25,25,Type::bug};
   constexpr static Species butterfree{60,45,50,70,80,90,Type::bug,Type::flying};
-  constexpr static Species dragonite{91,134,95,80,100,100,Type::dragon,Type::flying};
+  constexpr static Species dragonite{91,134,95,80,100,100,Type::dragon,Type::flying,NatureTable::hardy};
 };
 
 namespace MoveTable {

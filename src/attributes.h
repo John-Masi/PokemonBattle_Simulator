@@ -77,24 +77,39 @@ enum Type {
   steel
 };
 
-enum Nature {
+ struct Nature {
+    int inc_stat{};
+    int dec_stat{};
+    constexpr explicit Nature(int inc_stat,int dec_stat) : inc_stat(inc_stat), dec_stat(dec_stat){}
+};
 
-
+namespace NatureTable {
+  // This follows the indices of the stats array in species
+  constexpr static Nature none{0,0};
+  constexpr static Nature hardy{2,2};
+  constexpr static Nature lonely{2,3};
 };
 
 struct Species {
   Type types[2];
-  uint16_t hp{};
-  uint16_t attk{};
-  uint16_t def{};
-  uint16_t speed{};
-  uint16_t SpDef{};
-  uint16_t SpAttk{};
+  // [0] - hp, [1] - attk, [2] - def, [3] - [speed] , [4] - Spdef, [5] - SpAttk 
+  uint16_t stats[6] = {0,0,0,0,0,0};
 
-  constexpr Species(uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none) 
-  : hp(hp), attk(attk), def(def), speed(speed), SpDef(SpDef), SpAttk(SpAttk){
+  constexpr explicit Species(uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none,const Nature& n = NatureTable::none) { 
     types[0] = t1;
     types[1] = t2;
+    
+    // Stats assignment
+    stats[0] = hp;
+    stats[1] = attk;
+    stats[2] = def;
+    stats[3] = speed;
+    stats[4] = SpDef;
+    stats[5] = SpAttk;
+
+
+    stats[n.inc_stat] = stats[n.inc_stat] * (11/10);
+    stats[n.dec_stat] = stats[n.dec_stat] * (9/10);
   }
 };
 
@@ -114,18 +129,13 @@ struct Pokemon {
   std::vector<Move> moves;
   uint16_t level{};
   uint16_t exp{};
-  constexpr Pokemon(const Species& sp): sp(sp) {
+  Pokemon(const Species& sp): sp(sp) {
     moves.reserve(4);
   }
-  void natureMath(uint16_t stat_1,uint16_t stat_2);
   void learnMove(Move& m);
   void printMoves();
 };
 
-inline void Pokemon::natureMath(uint16_t stat_1,uint16_t stat_2){
-  stat_1 = stat_1 * (11/10);
-  stat_2 = stat_2 * (9/10);
-}
 inline void Pokemon::learnMove(Move& m) {
   if(moves.size() > 3) {
     std::cout << "exceeded move limit";
@@ -164,8 +174,8 @@ struct Dmg {
       stab = 1.5;
     }
 
-    dmg =  ((((2.0 * static_cast<float>(a_pkmn.level) / 5.0 ) + 2.0)) * (move.attk * a_pkmn.sp.attk 
-                    / t_pkmn.sp.def) / 50.0) + 2.0 * stab * type;
+    dmg =  ((((2.0 * static_cast<float>(a_pkmn.level) / 5.0 ) + 2.0)) * (move.attk * a_pkmn.sp.stats[0] 
+                    / t_pkmn.sp.stats[1]) / 50.0) + 2.0 * stab * type;
   
   }
 };
