@@ -31,7 +31,6 @@ class Battle {
         void turn();
         void battle();
         std::optional<Move> select_Move();
-        float dmgCalc(Pokemon& a_pkmn,Pokemon& t_pkmn,Move& move);
 };
 
 #endif 

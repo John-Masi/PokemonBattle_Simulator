@@ -18,7 +18,7 @@ TEST(FaintTest,BasicAssertions) {
   t.addMember("TestMon_6",SpeciesTable::dragonite);
 
   for(auto& n: t.team) {
-    n.sp.stats[0] = 0;
+    n->hp = 0;
   }
 
   EXPECT_EQ(t.teamFainted(),true);

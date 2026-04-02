@@ -3,15 +3,16 @@
 #include <algorithm>
 #include <ranges>
 #include <iostream>
+#include <memory>
 
 #ifndef TEAM
 #define TEAM
 
 struct Team {
-   std::vector<Pokemon> team;
+   std::vector<std::shared_ptr<Pokemon>> team;
     
    Team() {
-      team.reserve(6);
+
    }
    
    void printTeam() const;
@@ -20,15 +21,15 @@ struct Team {
 };
 
 inline void Team::addMember(const std::string& name,const Species& sp) {
-  team.emplace_back(name,sp);
+  team.push_back(std::make_shared<Pokemon>("name",sp));
 }
 
 inline void Team::printTeam() const {
-    std::for_each(team.begin(),team.end(),[](const Pokemon& p) { std::cout << p.name << " " << " lvl: " << p.level; });
+    std::for_each(team.begin(),team.end(),[](const std::shared_ptr<Pokemon>& p) { std::cout << p->name << " " << " lvl: " << p->level; });
 }
 
 inline bool Team::teamFainted() {
-  auto count = std::ranges::count_if(team.begin(),team.end(),[](const Pokemon& p) { return p.sp.stats[0] == 0; });
+  auto count = std::ranges::count_if(team.begin(),team.end(),[](const std::shared_ptr<Pokemon>& p) { return p->sp.stats[0] == 0; });
 
   if(count == 6) {
     return true;

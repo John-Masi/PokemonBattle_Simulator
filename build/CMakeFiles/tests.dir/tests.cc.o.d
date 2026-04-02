@@ -310,6 +310,7 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
  /home/johnmasi/pokemon/src/attributes.h /usr/include/c++/13/algorithm \
  /usr/include/c++/13/bits/ranges_algo.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
+ /home/johnmasi/pokemon/src/move.h /home/johnmasi/pokemon/src/types.h \
  /home/johnmasi/pokemon/src/battle.hpp \
  /home/johnmasi/pokemon/src/trainer.hpp /home/johnmasi/pokemon/src/team.h \
  /usr/include/c++/13/ranges /usr/include/c++/13/span \

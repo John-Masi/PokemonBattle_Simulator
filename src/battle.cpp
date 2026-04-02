@@ -29,9 +29,4 @@ void Battle::turn() {
   }
 }
 
-// a_pkmn(attacking pokemon) t_pkmn(target pokemon)
-float Battle::dmgCalc(Pokemon& a_pkmn,Pokemon& t_pkmn,Move& move) {
-  Dmg moveDmg{a_pkmn,t_pkmn,move}; 
 
-  return moveDmg.dmg;
-}
