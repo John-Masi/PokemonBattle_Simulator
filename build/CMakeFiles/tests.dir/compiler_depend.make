@@ -3,6 +3,7 @@
 
 CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /home/johnmasi/pokemon/src/attributes.h \
+  /home/johnmasi/pokemon/src/team.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -252,6 +253,8 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
   /home/johnmasi/pokemon/src/attributes.h \
   /home/johnmasi/pokemon/src/battle.hpp \
   /home/johnmasi/pokemon/src/data.h \
+  /home/johnmasi/pokemon/src/player.hpp \
+  /home/johnmasi/pokemon/src/team.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -790,6 +793,10 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
 
 /usr/include/c++/13/bits/align.h:
 
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/usr/include/c++/13/atomic:
+
 /usr/include/c++/13/typeinfo:
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
@@ -920,6 +927,14 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /usr/include/c++/13/cstddef:
 
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
+
+/usr/include/c++/13/bits/postypes.h:
+
 /usr/include/c++/13/ios:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
@@ -960,8 +975,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 
-/usr/include/c++/13/bits/localefwd.h:
-
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/c++/13/bits/chrono.h:
@@ -977,6 +990,20 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h:
 /usr/include/c++/13/bits/stl_set.h:
 
 /usr/include/c++/13/bits/ostream_insert.h:
+
+/usr/include/c++/13/backward/binders.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
+/usr/include/c++/13/bits/string_view.tcc:
+
+/usr/include/linux/stat.h:
+
+/usr/include/c++/13/bits/locale_facets.tcc:
+
+/usr/include/c++/13/bits/localefwd.h:
+
+/home/johnmasi/pokemon/src/team.h:
 
 /usr/include/x86_64-linux-gnu/bits/posix2_lim.h:
 
@@ -1058,29 +1085,7 @@ _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
-/usr/include/c++/13/bits/uses_allocator.h:
-
-/usr/include/c++/13/bits/postypes.h:
-
-/usr/include/c++/13/bits/parse_numbers.h:
-
-/usr/include/c++/13/bits/std_abs.h:
-
 /home/johnmasi/pokemon/src/trainer.cpp:
-
-/usr/include/c++/13/bits/functional_hash.h:
-
-/usr/include/errno.h:
-
-/usr/include/c++/13/backward/binders.h:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/c++/13/bits/string_view.tcc:
-
-/usr/include/linux/stat.h:
-
-/usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -1103,6 +1108,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-typed-test.h:
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/c++/13/bits/functional_hash.h:
+
+/usr/include/errno.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
 
@@ -1138,8 +1147,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 
 /usr/include/wchar.h:
 
-/usr/include/c++/13/vector:
-
 /usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/include/c++/13/stdexcept:
@@ -1147,6 +1154,8 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h:
 _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 
 /usr/include/c++/13/bits/ranges_algobase.h:
+
+/usr/include/c++/13/vector:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/float.h:
 
@@ -1201,10 +1210,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-string.h:
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
-
-/usr/include/c++/13/bits/requires_hosted.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /usr/include/c++/13/limits:
 
@@ -1378,6 +1383,12 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h:
 
 _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 
+/usr/include/c++/13/bits/requires_hosted.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+
+/home/johnmasi/pokemon/src/player.hpp:
+
 /usr/include/c++/13/bits/ranges_cmp.h:
 
 /usr/include/asm-generic/int-ll64.h:
@@ -1387,7 +1398,3 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 /usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
 
 /usr/include/c++/13/any:
-
-/usr/include/c++/13/atomic:
-
-/usr/include/c++/13/backward/auto_ptr.h:

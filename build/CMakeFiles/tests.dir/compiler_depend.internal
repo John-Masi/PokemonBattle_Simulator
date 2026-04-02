@@ -4,6 +4,7 @@
 CMakeFiles/tests.dir/src/trainer.cpp.o
  /home/johnmasi/pokemon/src/trainer.cpp
  /home/johnmasi/pokemon/src/attributes.h
+ /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -254,6 +255,8 @@ CMakeFiles/tests.dir/tests.cc.o
  /home/johnmasi/pokemon/src/attributes.h
  /home/johnmasi/pokemon/src/battle.hpp
  /home/johnmasi/pokemon/src/data.h
+ /home/johnmasi/pokemon/src/player.hpp
+ /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h

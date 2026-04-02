@@ -50,7 +50,7 @@ namespace Typechart {
 };
 
 template <typename T>
-static float modifier(T t1,T t2) {
+static float modifier(const T t1, const T t2) {
   return Typechart::typechart[t1][t2];
 }
 
@@ -85,15 +85,15 @@ enum Type {
 
 namespace NatureTable {
   // This follows the indices of the stats array in species
-  constexpr static Nature none{0,0};
+  constexpr static Nature none{6,6};
   constexpr static Nature hardy{2,2};
   constexpr static Nature lonely{2,3};
 };
 
 struct Species {
   Type types[2];
-  // [0] - hp, [1] - attk, [2] - def, [3] - [speed] , [4] - Spdef, [5] - SpAttk 
-  uint16_t stats[6] = {0,0,0,0,0,0};
+  // [0] - hp, [1] - attk, [2] - def, [3] - [speed] , [4] - Spdef, [5] - SpAttk, [6] - empty stat tag 
+  uint16_t stats[7] = {0,0,0,0,0,0,0};
 
   constexpr explicit Species(uint16_t hp,uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none,const Nature& n = NatureTable::none) { 
     types[0] = t1;
@@ -107,7 +107,7 @@ struct Species {
     stats[4] = SpDef;
     stats[5] = SpAttk;
 
-
+    
     stats[n.inc_stat] = stats[n.inc_stat] * (11/10);
     stats[n.dec_stat] = stats[n.dec_stat] * (9/10);
   }
@@ -127,9 +127,10 @@ struct Move {
 struct Pokemon {
   Species sp;
   std::vector<Move> moves;
-  uint16_t level{};
-  uint16_t exp{};
-  Pokemon(const Species& sp): sp(sp) {
+  std::string name;
+  uint16_t level{1};
+  uint16_t exp{1};
+  Pokemon(const std::string& name,const Species& sp): name(name),sp(sp) {
     moves.reserve(4);
   }
   void learnMove(Move& m);

@@ -175,6 +175,7 @@ CMakeFiles/pokemon.dir/src/battle.cpp.o: \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/johnmasi/pokemon/src/trainer.hpp /usr/include/c++/13/ranges \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/c++/13/span /usr/include/c++/13/array
+ /home/johnmasi/pokemon/src/trainer.hpp /home/johnmasi/pokemon/src/team.h \
+ /usr/include/c++/13/ranges /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/span \
+ /usr/include/c++/13/array /home/johnmasi/pokemon/src/player.hpp

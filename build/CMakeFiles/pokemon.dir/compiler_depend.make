@@ -5,11 +5,12 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
   /home/johnmasi/pokemon/src/attributes.h \
   /home/johnmasi/pokemon/src/battle.hpp \
   /home/johnmasi/pokemon/src/data.h \
+  /home/johnmasi/pokemon/src/player.hpp \
+  /home/johnmasi/pokemon/src/team.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
-  /usr/include/assert.h \
   /usr/include/c++/13/algorithm \
   /usr/include/c++/13/array \
   /usr/include/c++/13/backward/binders.h \
@@ -87,7 +88,6 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
   /usr/include/c++/13/bits/vector.tcc \
-  /usr/include/c++/13/cassert \
   /usr/include/c++/13/cctype \
   /usr/include/c++/13/cerrno \
   /usr/include/c++/13/clocale \
@@ -234,6 +234,8 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
 CMakeFiles/pokemon.dir/src/battle.cpp.o: /home/johnmasi/pokemon/src/battle.cpp \
   /home/johnmasi/pokemon/src/attributes.h \
   /home/johnmasi/pokemon/src/battle.hpp \
+  /home/johnmasi/pokemon/src/player.hpp \
+  /home/johnmasi/pokemon/src/team.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -460,6 +462,7 @@ CMakeFiles/pokemon.dir/src/battle.cpp.o: /home/johnmasi/pokemon/src/battle.cpp \
 
 CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /home/johnmasi/pokemon/src/attributes.h \
+  /home/johnmasi/pokemon/src/team.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \
@@ -857,15 +860,13 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/bits/nested_exception.h:
 
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+/usr/include/c++/13/bits/exception_defines.h:
 
-/usr/include/locale.h:
+/home/johnmasi/pokemon/src/team.h:
 
-/home/johnmasi/pokemon/src/trainer.hpp:
+/home/johnmasi/pokemon/main.cpp:
 
-/usr/include/c++/13/bits/algorithmfwd.h:
-
-/usr/include/assert.h:
+/usr/include/c++/13/bits/localefwd.h:
 
 /usr/include/c++/13/typeinfo:
 
@@ -879,25 +880,11 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/bits/exception.h:
 
-/usr/include/c++/13/bits/exception_defines.h:
-
-/home/johnmasi/pokemon/main.cpp:
-
-/usr/include/c++/13/bits/localefwd.h:
-
 /usr/include/c++/13/cwctype:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/c++/13/iosfwd:
 
 /usr/include/c++/13/cwchar:
 
-/usr/include/c++/13/bits/ranges_util.h:
-
-/usr/include/asm-generic/errno-base.h:
+/home/johnmasi/pokemon/src/player.hpp:
 
 /usr/include/c++/13/array:
 
@@ -905,11 +892,21 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/string_view:
 
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
+
+/usr/include/locale.h:
+
+/home/johnmasi/pokemon/src/trainer.hpp:
+
+/usr/include/c++/13/bits/algorithmfwd.h:
+
 /usr/include/alloca.h:
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
 /usr/include/c++/13/bit:
+
+/usr/include/c++/13/backward/binders.h:
 
 /usr/include/c++/13/iterator:
 
@@ -918,6 +915,10 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/c++/13/bits/ptr_traits.h:
+
+/usr/include/c++/13/bits/alloc_traits.h:
+
+/usr/include/c++/13/bits/concept_check.h:
 
 /usr/include/c++/13/bits/ostream_insert.h:
 
@@ -928,6 +929,16 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /home/johnmasi/pokemon/src/battle.hpp:
 
 /usr/include/c++/13/bits/cxxabi_forced.h:
+
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/bits/ranges_util.h:
 
 /usr/include/c++/13/algorithm:
 
@@ -946,12 +957,6 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /usr/include/c++/13/cerrno:
 
 /usr/include/c++/13/ios:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/backward/binders.h:
 
 /usr/include/c++/13/bits/ranges_base.h:
 
@@ -1074,8 +1079,6 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /usr/include/c++/13/bits/uses_allocator_args.h:
 
 /usr/include/c++/13/bits/vector.tcc:
-
-/usr/include/c++/13/cassert:
 
 /usr/include/c++/13/clocale:
 

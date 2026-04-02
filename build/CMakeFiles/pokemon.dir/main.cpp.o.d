@@ -174,7 +174,7 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/pstl/execution_defs.h \
  /home/johnmasi/pokemon/src/battle.hpp /usr/include/c++/13/optional \
  /usr/include/c++/13/bits/enable_special_members.h \
- /home/johnmasi/pokemon/src/trainer.hpp /usr/include/c++/13/ranges \
- /usr/include/c++/13/iterator /usr/include/c++/13/bits/stream_iterator.h \
- /usr/include/c++/13/span /usr/include/c++/13/array \
- /usr/include/c++/13/cassert /usr/include/assert.h
+ /home/johnmasi/pokemon/src/trainer.hpp /home/johnmasi/pokemon/src/team.h \
+ /usr/include/c++/13/ranges /usr/include/c++/13/iterator \
+ /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/span \
+ /usr/include/c++/13/array /home/johnmasi/pokemon/src/player.hpp

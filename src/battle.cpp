@@ -1,15 +1,5 @@
 #include "battle.hpp"
 
-
-void Battle::swap_Pokemon(Pokemon& pokemon) {
-  if(state == b_State::p_turn) {
-    p_1 = &pokemon;
-  }
-  else if(state == b_State::t_turn) {
-    p_2 = &pokemon;
-  }
-}
-
 std::optional<Move> Battle::select_Move() {
   return std::nullopt;
 }
@@ -30,10 +20,8 @@ void Battle::turn() {
   switch(state) {
     case(b_State::p_turn) : {
       std::cout << "Please select the move you would like to use";
-      p_1->printMoves();
       int moveSelected;
       std::cin >> moveSelected;
-      Dmg dmgCalc(*p_1,*p_2,p_1->moves[moveSelected]);
     };
     case(b_State::t_turn) : {
       // System to decide the trainers move

@@ -6,11 +6,12 @@ CMakeFiles/pokemon.dir/main.cpp.o
  /home/johnmasi/pokemon/src/attributes.h
  /home/johnmasi/pokemon/src/battle.hpp
  /home/johnmasi/pokemon/src/data.h
+ /home/johnmasi/pokemon/src/player.hpp
+ /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
- /usr/include/assert.h
  /usr/include/c++/13/algorithm
  /usr/include/c++/13/array
  /usr/include/c++/13/backward/binders.h
@@ -88,7 +89,6 @@ CMakeFiles/pokemon.dir/main.cpp.o
  /usr/include/c++/13/bits/uses_allocator_args.h
  /usr/include/c++/13/bits/utility.h
  /usr/include/c++/13/bits/vector.tcc
- /usr/include/c++/13/cassert
  /usr/include/c++/13/cctype
  /usr/include/c++/13/cerrno
  /usr/include/c++/13/clocale
@@ -236,6 +236,8 @@ CMakeFiles/pokemon.dir/src/battle.cpp.o
  /home/johnmasi/pokemon/src/battle.cpp
  /home/johnmasi/pokemon/src/attributes.h
  /home/johnmasi/pokemon/src/battle.hpp
+ /home/johnmasi/pokemon/src/player.hpp
+ /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
@@ -463,6 +465,7 @@ CMakeFiles/pokemon.dir/src/battle.cpp.o
 CMakeFiles/pokemon.dir/src/trainer.cpp.o
  /home/johnmasi/pokemon/src/trainer.cpp
  /home/johnmasi/pokemon/src/attributes.h
+ /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
