@@ -21,31 +21,31 @@ struct Nature {
 namespace NatureTable {
   // This follows the indices of the stats array in species
   //  Find a better implmentation of this because i did not realize that it goes in order of stats
-  constexpr static Nature none{5,5};
-  constexpr static Nature hardy{2,2};
-  constexpr static Nature lonely{2,3};
-  constexpr static Nature adamant{1,4};
-  constexpr static Nature naughty{1,3};
-  constexpr static Nature bold{1,0};
-  constexpr static Nature docile{1,1};
-  constexpr static Nature relaxed{1,2};
-  constexpr static Nature impish{1,4};
-  constexpr static Nature lax{1,3};
-  constexpr static Nature timid{2,0};
-  constexpr static Nature hasty{2,1};
-  constexpr static Nature serious{2,2};
-  constexpr static Nature jolly{2,4};
-  constexpr static Nature naive{2,3};
-  constexpr static Nature modest{4,0};
-  constexpr static Nature mild{4,1};
-  constexpr static Nature quiet{4,2};
-  constexpr static Nature bashful{4,4};
-  constexpr static Nature rash{4,3};
-  constexpr static Nature calm{3,0};
-  constexpr static Nature gentle{3,1};
-  constexpr static Nature sassy{3,2};
-  constexpr static Nature careful{3,4};
-  constexpr static Nature quirky{3,3};
+  constexpr Nature none{5,5};
+  constexpr Nature hardy{2,2};
+  constexpr Nature lonely{2,3};
+  constexpr Nature adamant{1,4};
+  constexpr Nature naughty{1,3};
+  constexpr Nature bold{1,0};
+  constexpr Nature docile{1,1};
+  constexpr Nature relaxed{1,2};
+  constexpr Nature impish{1,4};
+  constexpr Nature lax{1,3};
+  constexpr Nature timid{2,0};
+  constexpr Nature hasty{2,1};
+  constexpr Nature serious{2,2};
+  constexpr Nature jolly{2,4};
+  constexpr Nature naive{2,3};
+  constexpr Nature modest{4,0};
+  constexpr Nature mild{4,1};
+  constexpr Nature quiet{4,2};
+  constexpr Nature bashful{4,4};
+  constexpr Nature rash{4,3};
+  constexpr Nature calm{3,0};
+  constexpr Nature gentle{3,1};
+  constexpr Nature sassy{3,2};
+  constexpr Nature careful{3,4};
+  constexpr Nature quirky{3,3};
 
 };
 
