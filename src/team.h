@@ -17,10 +17,10 @@ struct Team {
    
    void printTeam() const;
    bool teamFainted();
-   void addMember(const std::string& name,const Species& sp);
+   void addMember(const std::string& name,Species& sp);
 };
 
-inline void Team::addMember(const std::string& name,const Species& sp) {
+inline void Team::addMember(const std::string& name,Species& sp) {
   team.push_back(std::make_shared<Pokemon>("name",sp));
 }
 

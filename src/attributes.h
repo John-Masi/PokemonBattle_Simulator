@@ -2,6 +2,7 @@
 #include <utility> 
 #include <string> 
 #include <vector>
+#include <optional> 
 #include <algorithm>
 #include <iostream> 
 #include "move.h"
@@ -49,6 +50,28 @@ namespace NatureTable {
 
 };
 
+enum stat_tag {
+  ATTACK,
+  DEF,
+  SPEED,
+  SP_ATTK,
+  SP_DEF,
+  NONE
+};
+
+struct EffortValues {
+  std::pair<stat_tag,uint16_t> evs[3];
+
+  EffortValues(const stat_tag tag_1,const uint16_t mod_1,const stat_tag tag_2,const uint16_t mod_2,const stat_tag tag_3,const uint16_t mod_3) {
+    evs[0].first = tag_1;
+    evs[0].second = mod_1;
+    evs[1].first = tag_2;
+    evs[1].second = mod_2;
+    evs[2].first = tag_3;
+    evs[2].second = mod_3;
+  }
+};
+
 struct Species {
   Type types[2];
   //  [0] - attk, [1] - def, [2] - [speed] , [3] - Spdef, [4] - SpAttk, [5] - empty stat tag 
@@ -75,10 +98,16 @@ struct Pokemon {
   Species sp;
   std::vector<Move> moves;
   std::string name;
+  uint16_t ivs[6] = {0,0,0,0,0,0};
   uint16_t level{1};
   uint16_t exp{1};
   uint16_t hp{1};
-  Pokemon(const std::string& name,const Species& sp): name(name), sp(sp){
+  Pokemon(const std::string& name,Species& sp,const std::optional<EffortValues> ev = std::nullopt): name(name), sp(sp){
+    if(ev.has_value()) {
+      for(int i = 0; i < 3; i ++) {
+        sp.stats[ev.value().evs[i].first] = ((2 * sp.stats[ev.value().evs[i].first] + (ev.value().evs[i].second / 4) * level ) / 100)  +5;
+      }
+    }
     moves.reserve(4);
   }
   void learnMove(Move& m);
