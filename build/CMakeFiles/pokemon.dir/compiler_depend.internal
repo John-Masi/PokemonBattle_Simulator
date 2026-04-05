@@ -3,14 +3,14 @@
 
 CMakeFiles/pokemon.dir/main.cpp.o
  /home/johnmasi/pokemon/main.cpp
- /home/johnmasi/pokemon/src/attributes.h
+ /home/johnmasi/pokemon/include/attributes.h
+ /home/johnmasi/pokemon/include/dmg.h
+ /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/team.h
+ /home/johnmasi/pokemon/include/types.h
  /home/johnmasi/pokemon/src/battle.hpp
- /home/johnmasi/pokemon/src/data.h
- /home/johnmasi/pokemon/src/move.h
  /home/johnmasi/pokemon/src/player.hpp
- /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
- /home/johnmasi/pokemon/src/types.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -276,13 +276,14 @@ CMakeFiles/pokemon.dir/main.cpp.o
 
 CMakeFiles/pokemon.dir/src/battle.cpp.o
  /home/johnmasi/pokemon/src/battle.cpp
- /home/johnmasi/pokemon/src/attributes.h
+ /home/johnmasi/pokemon/include/attributes.h
+ /home/johnmasi/pokemon/include/dmg.h
+ /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/team.h
+ /home/johnmasi/pokemon/include/types.h
  /home/johnmasi/pokemon/src/battle.hpp
- /home/johnmasi/pokemon/src/move.h
  /home/johnmasi/pokemon/src/player.hpp
- /home/johnmasi/pokemon/src/team.h
  /home/johnmasi/pokemon/src/trainer.hpp
- /home/johnmasi/pokemon/src/types.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -546,13 +547,18 @@ CMakeFiles/pokemon.dir/src/battle.cpp.o
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
+CMakeFiles/pokemon.dir/src/player.cpp.o
+ /home/johnmasi/pokemon/src/player.cpp
+ /usr/include/stdc-predef.h
+
 CMakeFiles/pokemon.dir/src/trainer.cpp.o
  /home/johnmasi/pokemon/src/trainer.cpp
- /home/johnmasi/pokemon/src/attributes.h
- /home/johnmasi/pokemon/src/move.h
- /home/johnmasi/pokemon/src/team.h
+ /home/johnmasi/pokemon/include/attributes.h
+ /home/johnmasi/pokemon/include/dmg.h
+ /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/team.h
+ /home/johnmasi/pokemon/include/types.h
  /home/johnmasi/pokemon/src/trainer.hpp
- /home/johnmasi/pokemon/src/types.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h

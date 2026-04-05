@@ -1,7 +1,6 @@
 #include <gtest/gtest.h>
-#include "src/data.h"
-#include "src/battle.hpp"
-#include "src/team.h"
+#include "include/data.h"
+#include "include/team.h"
 
 
 

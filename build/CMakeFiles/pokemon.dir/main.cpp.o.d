@@ -153,8 +153,12 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /home/johnmasi/pokemon/src/data.h \
- /home/johnmasi/pokemon/src/attributes.h /usr/include/c++/13/cstdint \
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/johnmasi/pokemon/src/battle.hpp /usr/include/c++/13/optional \
+ /usr/include/c++/13/bits/enable_special_members.h \
+ /home/johnmasi/pokemon/src/trainer.hpp \
+ /home/johnmasi/pokemon/src/../include/attributes.h \
+ /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
@@ -162,9 +166,8 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
- /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/optional \
- /usr/include/c++/13/bits/enable_special_members.h \
- /usr/include/c++/13/algorithm /usr/include/c++/13/bits/stl_algo.h \
+ /usr/include/c++/13/bits/vector.tcc /usr/include/c++/13/algorithm \
+ /usr/include/c++/13/bits/stl_algo.h \
  /usr/include/c++/13/bits/algorithmfwd.h \
  /usr/include/c++/13/bits/stl_heap.h \
  /usr/include/c++/13/bits/uniform_int_dist.h \
@@ -173,9 +176,10 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/bits/ranges_algobase.h \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /usr/include/c++/13/pstl/execution_defs.h \
- /home/johnmasi/pokemon/src/move.h /home/johnmasi/pokemon/src/types.h \
- /home/johnmasi/pokemon/src/battle.hpp \
- /home/johnmasi/pokemon/src/trainer.hpp /home/johnmasi/pokemon/src/team.h \
+ /home/johnmasi/pokemon/src/../include/move.h \
+ /home/johnmasi/pokemon/src/../include/types.h \
+ /home/johnmasi/pokemon/src/../include/team.h \
+ /home/johnmasi/pokemon/src/../include/attributes.h \
  /usr/include/c++/13/ranges /usr/include/c++/13/iterator \
  /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/span \
  /usr/include/c++/13/array /usr/include/c++/13/memory \
@@ -213,4 +217,5 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /home/johnmasi/pokemon/src/../include/dmg.h \
  /home/johnmasi/pokemon/src/player.hpp

@@ -11,6 +11,7 @@ FetchContent_Declare(
 file(GLOB SOURCES "src/*.cpp")
 add_executable(pokemon main.cpp src/trainer.cpp ${SOURCES})
 target_compile_features(pokemon PRIVATE cxx_std_20)
+target_include_directories(pokemon PRIVATE include)
 FetchContent_MakeAvailable(googletest)
 
 enable_testing()

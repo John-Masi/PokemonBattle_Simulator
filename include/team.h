@@ -20,6 +20,8 @@ struct Team {
    void addMember(const std::string& name,Species& sp);
 };
 
+
+
 inline void Team::addMember(const std::string& name,Species& sp) {
   team.push_back(std::make_shared<Pokemon>("name",sp));
 }

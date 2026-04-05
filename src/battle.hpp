@@ -1,6 +1,5 @@
 #include <optional> 
 #include <iostream>
-#include "attributes.h"
 #include "trainer.hpp"
 #include "player.hpp"
 

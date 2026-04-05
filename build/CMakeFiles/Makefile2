@@ -136,12 +136,12 @@ _deps/googletest-build/googletest/clean: _deps/googletest-build/googletest/CMake
 CMakeFiles/pokemon.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/pokemon.dir/build.make CMakeFiles/pokemon.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=9,10,11,12 "Built target pokemon"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=9,10,11,12,13 "Built target pokemon"
 .PHONY : CMakeFiles/pokemon.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/pokemon.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnmasi/pokemon/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnmasi/pokemon/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/pokemon.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/johnmasi/pokemon/build/CMakeFiles 0
 .PHONY : CMakeFiles/pokemon.dir/rule
@@ -163,7 +163,7 @@ CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest.dir
 CMakeFiles/tests.dir/all: _deps/googletest-build/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tests.dir/build.make CMakeFiles/tests.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=13,14,15 "Built target tests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/johnmasi/pokemon/build/CMakeFiles --progress-num=14,15,16 "Built target tests"
 .PHONY : CMakeFiles/tests.dir/all
 
 # Build rule for subdir invocation for target.

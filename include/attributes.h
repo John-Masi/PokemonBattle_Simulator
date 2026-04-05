@@ -112,7 +112,6 @@ struct Pokemon {
   }
   void learnMove(Move& m);
   void printMoves() const ;
-  float dmgCalc(const Pokemon& t_pkmn,const Move& move);
 };
 
 inline void Pokemon::learnMove(Move& m) {
@@ -134,22 +133,5 @@ inline void Pokemon::printMoves() const {
 
   });
 }
-
-inline float Pokemon::dmgCalc(const Pokemon& t_pkmn,const Move& move) {
-    // Type effective Calculation
-    float stab{1.0};
-    auto type = modifier(move.move_Type,t_pkmn.sp.types[0]);
-    
-    // STAB Caclulation 
-    if(sp.types[0] == move.move_Type || sp.types[1] == move.move_Type) {
-      stab = 1.5;
-    }
-
-    auto dmg =  ((((2.0 * static_cast<float>(level) / 5.0 ) + 2.0)) * (move.attk * sp.stats[0] 
-                    / t_pkmn.sp.stats[1]) / 50.0) + 2.0 * stab * type;
-      
-    return dmg;
-}
-
 
 #endif 

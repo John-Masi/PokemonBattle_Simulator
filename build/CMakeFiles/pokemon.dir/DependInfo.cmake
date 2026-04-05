@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/johnmasi/pokemon/main.cpp" "CMakeFiles/pokemon.dir/main.cpp.o" "gcc" "CMakeFiles/pokemon.dir/main.cpp.o.d"
   "/home/johnmasi/pokemon/src/battle.cpp" "CMakeFiles/pokemon.dir/src/battle.cpp.o" "gcc" "CMakeFiles/pokemon.dir/src/battle.cpp.o.d"
+  "/home/johnmasi/pokemon/src/player.cpp" "CMakeFiles/pokemon.dir/src/player.cpp.o" "gcc" "CMakeFiles/pokemon.dir/src/player.cpp.o.d"
   "/home/johnmasi/pokemon/src/trainer.cpp" "CMakeFiles/pokemon.dir/src/trainer.cpp.o" "gcc" "CMakeFiles/pokemon.dir/src/trainer.cpp.o.d"
   )
 

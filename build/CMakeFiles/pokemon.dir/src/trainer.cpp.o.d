@@ -1,7 +1,8 @@
 CMakeFiles/pokemon.dir/src/trainer.cpp.o: \
  /home/johnmasi/pokemon/src/trainer.cpp /usr/include/stdc-predef.h \
  /home/johnmasi/pokemon/src/trainer.hpp \
- /home/johnmasi/pokemon/src/attributes.h /usr/include/c++/13/cstdint \
+ /home/johnmasi/pokemon/src/../include/attributes.h \
+ /usr/include/c++/13/cstdint \
  /usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -174,8 +175,11 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: \
  /usr/include/c++/13/bits/locale_facets.tcc \
  /usr/include/c++/13/bits/basic_ios.tcc \
  /usr/include/c++/13/bits/ostream.tcc /usr/include/c++/13/istream \
- /usr/include/c++/13/bits/istream.tcc /home/johnmasi/pokemon/src/move.h \
- /home/johnmasi/pokemon/src/types.h /home/johnmasi/pokemon/src/team.h \
+ /usr/include/c++/13/bits/istream.tcc \
+ /home/johnmasi/pokemon/src/../include/move.h \
+ /home/johnmasi/pokemon/src/../include/types.h \
+ /home/johnmasi/pokemon/src/../include/team.h \
+ /home/johnmasi/pokemon/src/../include/attributes.h \
  /usr/include/c++/13/ranges /usr/include/c++/13/iterator \
  /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/span \
  /usr/include/c++/13/array /usr/include/c++/13/memory \
@@ -212,4 +216,5 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: \
  /usr/include/c++/13/bits/std_mutex.h \
  /usr/include/c++/13/backward/auto_ptr.h \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
- /usr/include/c++/13/pstl/glue_memory_defs.h
+ /usr/include/c++/13/pstl/glue_memory_defs.h \
+ /home/johnmasi/pokemon/src/../include/dmg.h

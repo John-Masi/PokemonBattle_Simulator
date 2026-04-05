@@ -3,11 +3,12 @@
 
 CMakeFiles/tests.dir/src/trainer.cpp.o
  /home/johnmasi/pokemon/src/trainer.cpp
- /home/johnmasi/pokemon/src/attributes.h
- /home/johnmasi/pokemon/src/move.h
- /home/johnmasi/pokemon/src/team.h
+ /home/johnmasi/pokemon/include/attributes.h
+ /home/johnmasi/pokemon/include/dmg.h
+ /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/team.h
+ /home/johnmasi/pokemon/include/types.h
  /home/johnmasi/pokemon/src/trainer.hpp
- /home/johnmasi/pokemon/src/types.h
  /usr/include/alloca.h
  /usr/include/asm-generic/errno-base.h
  /usr/include/asm-generic/errno.h
@@ -294,14 +295,11 @@ CMakeFiles/tests.dir/tests.cc.o
  /home/johnmasi/pokemon/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h
  /home/johnmasi/pokemon/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h
  /home/johnmasi/pokemon/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h
- /home/johnmasi/pokemon/src/attributes.h
- /home/johnmasi/pokemon/src/battle.hpp
- /home/johnmasi/pokemon/src/data.h
- /home/johnmasi/pokemon/src/move.h
- /home/johnmasi/pokemon/src/player.hpp
- /home/johnmasi/pokemon/src/team.h
- /home/johnmasi/pokemon/src/trainer.hpp
- /home/johnmasi/pokemon/src/types.h
+ /home/johnmasi/pokemon/include/attributes.h
+ /home/johnmasi/pokemon/include/data.h
+ /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/team.h
+ /home/johnmasi/pokemon/include/types.h
  /usr/include/alloca.h
  /usr/include/asm-generic/bitsperlong.h
  /usr/include/asm-generic/errno-base.h
