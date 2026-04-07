@@ -124,7 +124,8 @@ inline void Pokemon::learnMove(Move& m) {
     // Handle replacing a move when we are full of moves
   }
   else {
-    moves.emplace_back(Move{m.move_Name,m.move_Type,m.pp,m.attk,m.accuracy});
+    // Telling what Moves should construct creates it directly in place instead of creating a temporary 
+    moves.emplace_back(std::in_place_type<Move> ,m.move_Name,m.move_Type,m.pp,m.attk,m.accuracy);
   }
 }
 
