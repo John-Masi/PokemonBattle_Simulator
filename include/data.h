@@ -20,6 +20,11 @@ namespace SpeciesTable {
   Species dragonite{134,95,80,100,100,Type::dragon,Type::flying};
 };
 
+namespace EffectTable {
+  Effect p_effect{"protect",0,0};
+  Effect t_effect{"sword_dance",0,0};
+};
+
 namespace MoveTable {
   // Move (name,type,pp,attk,accuracy,special)
   Move tackle{"Tackle",Type::normal,4,40,100};

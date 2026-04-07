@@ -10,6 +10,8 @@
 
 struct Team {
    std::vector<std::shared_ptr<Pokemon>> team;
+   // Current Status effect on a given team ex: protect, light screen.
+   Effect *currentEffect{nullptr};
     
    Team() {
 
@@ -18,6 +20,7 @@ struct Team {
    void printTeam() const;
    bool teamFainted();
    void addMember(const std::string& name,Species& sp);
+   void triggerEffect();
 };
 
 

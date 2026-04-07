@@ -1,8 +1,10 @@
 #include <cstdint>
+#include <variant>
 #include <utility> 
 #include <string> 
 #include <vector>
 #include <optional> 
+#include <type_traits>
 #include <algorithm>
 #include <iostream> 
 #include "move.h"
@@ -76,8 +78,9 @@ struct Species {
   Type types[2];
   //  [0] - attk, [1] - def, [2] - [speed] , [3] - Spdef, [4] - SpAttk, [5] - empty stat tag 
   uint16_t stats[6] = {0,0,0,0,0,0};
+  uint16_t stat_mod[6] = {0,0,0,0,0,0};
 
-  constexpr explicit Species(uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none,const Nature& n = NatureTable::none) { 
+  explicit Species(uint16_t attk,uint16_t def,uint16_t speed,uint16_t SpDef,uint16_t SpAttk,Type t1 = Type::none,Type t2 = Type::none,const Nature& n = NatureTable::none) { 
     types[0] = t1;
     types[1] = t2;
     
@@ -94,9 +97,10 @@ struct Species {
   }
 };
 
+using Moves = std::variant<Move,Effect>;
 struct Pokemon {
   Species sp;
-  std::vector<Move> moves;
+  std::vector<Moves> moves;
   std::string name;
   uint16_t ivs[6] = {0,0,0,0,0,0};
   uint16_t level{1};
@@ -120,18 +124,18 @@ inline void Pokemon::learnMove(Move& m) {
     // Handle replacing a move when we are full of moves
   }
   else {
-    moves.emplace_back(m.move_Name,m.move_Type,m.pp,m.attk,m.accuracy);
+    moves.emplace_back(Move{m.move_Name,m.move_Type,m.pp,m.attk,m.accuracy});
   }
 }
 
 inline void Pokemon::printMoves() const {
   std::cout << moves.capacity() << "\n";
-  std::for_each(moves.begin(),moves.end(),[](const Move& m)  {
-    std::cout << m.move_Type <<" PP: " << static_cast<unsigned int>(m.pp) << 
-      " Name: " << m.move_Name << "\n";
-    
 
-  });
+  //std::for_each(moves.begin(),moves.end(),[](const T& m)  {
+    //std::cout << m.move_Type <<" PP: " << static_cast<unsigned int>(m.pp) << 
+      //" Name: " << m.move_Name << "\n";});
+
 }
+
 
 #endif 
