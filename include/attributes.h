@@ -114,28 +114,32 @@ struct Pokemon {
     }
     moves.reserve(4);
   }
-  void learnMove(Move& m);
+  void learnAttk(const Move& m);
+  void learnEffect(const Effect& e);
   void printMoves() const ;
 };
 
-inline void Pokemon::learnMove(Move& m) {
-  if(moves.size() > 3) {
-    std::cout << "exceeded move limit";
-    // Handle replacing a move when we are full of moves
-  }
-  else {
-    // Telling what Moves should construct creates it directly in place instead of creating a temporary 
+inline void Pokemon::learnAttk(const Move& m) {
     moves.emplace_back(std::in_place_type<Move> ,m.move_Name,m.move_Type,m.pp,m.attk,m.accuracy);
-  }
 }
 
+inline void Pokemon::learnEffect(const Effect& e){
+    moves.emplace_back(std::in_place_type<Effect>, e.move_Name,e.pp,e.accuracy);
+}
+
+template <class... Ts>
+struct overload : Ts... {using Ts::operator() ...;};
+template <class... Ts> 
+overload(Ts...) -> overload<Ts...>;
+
 inline void Pokemon::printMoves() const {
-  std::cout << moves.capacity() << "\n";
-
-  //std::for_each(moves.begin(),moves.end(),[](const T& m)  {
-    //std::cout << m.move_Type <<" PP: " << static_cast<unsigned int>(m.pp) << 
-      //" Name: " << m.move_Name << "\n";});
-
+  for(auto& n: moves) {
+    std::visit(overload{
+      [](auto arg) { std::cout << arg; },
+      [](const Move& m) { std::cout << "Move Name: " << m.move_Name << "\n"; },
+      [](const Effect& e) { std::cout << "Move Name: "<< e.move_Name << "\n"; }
+    },n);
+  }
 }
 
 
