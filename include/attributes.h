@@ -124,7 +124,7 @@ inline void Pokemon::learnAttk(const Move& m) {
 }
 
 inline void Pokemon::learnEffect(const Effect& e){
-    moves.emplace_back(std::in_place_type<Effect>, e.move_Name,e.pp,e.accuracy);
+    moves.emplace_back(std::in_place_type<Effect>, e.eff,e.move_Name,e.pp,e.accuracy);
 }
 
 template <class... Ts>

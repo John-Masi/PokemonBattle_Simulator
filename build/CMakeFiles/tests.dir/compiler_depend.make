@@ -35,12 +35,15 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /usr/include/c++/13/bits/cxxabi_forced.h \
   /usr/include/c++/13/bits/cxxabi_init_exception.h \
   /usr/include/c++/13/bits/enable_special_members.h \
+  /usr/include/c++/13/bits/erase_if.h \
   /usr/include/c++/13/bits/exception.h \
   /usr/include/c++/13/bits/exception_defines.h \
   /usr/include/c++/13/bits/exception_ptr.h \
   /usr/include/c++/13/bits/functexcept.h \
   /usr/include/c++/13/bits/functional_hash.h \
   /usr/include/c++/13/bits/hash_bytes.h \
+  /usr/include/c++/13/bits/hashtable.h \
+  /usr/include/c++/13/bits/hashtable_policy.h \
   /usr/include/c++/13/bits/invoke.h \
   /usr/include/c++/13/bits/ios_base.h \
   /usr/include/c++/13/bits/istream.tcc \
@@ -56,6 +59,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /usr/include/c++/13/bits/move.h \
   /usr/include/c++/13/bits/nested_exception.h \
   /usr/include/c++/13/bits/new_allocator.h \
+  /usr/include/c++/13/bits/node_handle.h \
   /usr/include/c++/13/bits/ostream.tcc \
   /usr/include/c++/13/bits/ostream_insert.h \
   /usr/include/c++/13/bits/parse_numbers.h \
@@ -75,6 +79,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /usr/include/c++/13/bits/shared_ptr_atomic.h \
   /usr/include/c++/13/bits/shared_ptr_base.h \
   /usr/include/c++/13/bits/std_abs.h \
+  /usr/include/c++/13/bits/std_function.h \
   /usr/include/c++/13/bits/std_mutex.h \
   /usr/include/c++/13/bits/stl_algo.h \
   /usr/include/c++/13/bits/stl_algobase.h \
@@ -98,6 +103,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /usr/include/c++/13/bits/stringfwd.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_ptr.h \
+  /usr/include/c++/13/bits/unordered_map.h \
   /usr/include/c++/13/bits/uses_allocator.h \
   /usr/include/c++/13/bits/uses_allocator_args.h \
   /usr/include/c++/13/bits/utility.h \
@@ -124,6 +130,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /usr/include/c++/13/ext/numeric_traits.h \
   /usr/include/c++/13/ext/string_conversions.h \
   /usr/include/c++/13/ext/type_traits.h \
+  /usr/include/c++/13/functional \
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
@@ -149,6 +156,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /usr/include/c++/13/tuple \
   /usr/include/c++/13/type_traits \
   /usr/include/c++/13/typeinfo \
+  /usr/include/c++/13/unordered_map \
   /usr/include/c++/13/utility \
   /usr/include/c++/13/variant \
   /usr/include/c++/13/vector \
@@ -739,11 +747,7 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
 
 /usr/include/c++/13/locale:
 
-/usr/include/c++/13/functional:
-
 /usr/include/c++/13/cxxabi.h:
-
-/usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/bits/unique_lock.h:
 
@@ -762,10 +766,6 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
 /usr/include/c++/13/bits/quoted_string.h:
 
 /usr/include/c++/13/bits/locale_facets_nonio.tcc:
-
-/usr/include/c++/13/bits/hashtable_policy.h:
-
-/usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/c++/13/bits/stl_tree.h:
 
@@ -817,21 +817,19 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs.h:
 
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
 /usr/include/x86_64-linux-gnu/c++/13/bits/os_defines.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/gthr.h:
 
-_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
 
-/usr/include/c++/13/iostream:
+/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
 
-/usr/include/c++/13/ext/type_traits.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
-/usr/include/c++/13/ext/string_conversions.h:
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
 /usr/include/c++/13/ext/concurrence.h:
 
@@ -867,8 +865,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
-
 /usr/include/x86_64-linux-gnu/sys/syscall.h:
 
 /usr/include/c++/13/clocale:
@@ -884,6 +880,8 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 /usr/include/c++/13/bits/streambuf.tcc:
 
 /usr/include/c++/13/bits/max_size_type.h:
+
+/usr/include/c++/13/bits/unordered_map.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
@@ -921,23 +919,21 @@ _deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h:
 
 /usr/include/c++/13/bits/stl_bvector.h:
 
-/usr/include/c++/13/unordered_map:
-
-/usr/include/c++/13/bits/allocator.h:
-
 /usr/include/c++/13/bits/stl_algobase.h:
 
 /usr/include/c++/13/bits/stl_algo.h:
 
 /usr/include/c++/13/cstddef:
 
-/usr/include/c++/13/bits/uses_allocator.h:
-
 /usr/include/c++/13/bits/postypes.h:
+
+/usr/include/c++/13/bits/uses_allocator.h:
 
 /usr/include/c++/13/set:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
+
+/usr/include/c++/13/bits/erase_if.h:
 
 /usr/include/c++/13/bits/shared_ptr.h:
 
@@ -952,22 +948,6 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 /usr/include/c++/13/bits/refwrap.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__fpos_t.h:
-
-/usr/include/x86_64-linux-gnu/sys/wait.h:
-
-/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
-
-/usr/include/asm-generic/errno-base.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/c++/13/iosfwd:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h:
 
@@ -999,7 +979,11 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 
 /usr/include/c++/13/bits/ranges_uninitialized.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
+/usr/include/c++/13/bits/std_abs.h:
+
+/usr/include/c++/13/bits/parse_numbers.h:
+
+/usr/include/c++/13/numbers:
 
 /usr/include/c++/13/bits/basic_string.h:
 
@@ -1039,7 +1023,15 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 /usr/include/c++/13/bits/concept_check.h:
 
-/usr/include/c++/13/ios:
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/asm-generic/int-ll64.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
+
+/usr/include/c++/13/iosfwd:
 
 /usr/include/c++/13/ext/aligned_buffer.h:
 
@@ -1069,6 +1061,10 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
 
+/usr/include/c++/13/bits/ostream.tcc:
+
+/home/johnmasi/pokemon/include/team.h:
+
 /usr/include/c++/13/cerrno:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
@@ -1084,6 +1080,10 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 /usr/include/c++/13/iomanip:
 
 /home/johnmasi/pokemon/include/move.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/13/bits/node_handle.h:
 
 /usr/include/x86_64-linux-gnu/asm/posix_types.h:
 
@@ -1113,13 +1113,21 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
 
-/usr/include/c++/13/bits/hashtable.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
-
 /usr/include/c++/13/algorithm:
 
 /usr/include/c++/13/array:
+
+/usr/include/x86_64-linux-gnu/sys/wait.h:
+
+/usr/include/c++/13/bits/stl_iterator_base_funcs.h:
+
+/usr/include/asm-generic/errno-base.h:
+
+/usr/include/c++/13/any:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
+
+/usr/include/c++/13/bits/ranges_util.h:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
@@ -1146,6 +1154,20 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h:
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
 /usr/include/c++/13/bits/localefwd.h:
+
+/usr/include/c++/13/bits/hashtable_policy.h:
+
+/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
+
+/usr/include/c++/13/bits/std_function.h:
+
+/usr/include/c++/13/bits/char_traits.h:
+
+/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
 /usr/include/c++/13/bits/cxxabi_init_exception.h:
 
@@ -1179,17 +1201,9 @@ _deps/googletest-src/googletest/include/gtest/gtest-param-test.h:
 
 /usr/include/errno.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/c++config.h:
+/usr/include/x86_64-linux-gnu/bits/types/error_t.h:
 
-/home/johnmasi/pokemon/include/team.h:
-
-/usr/include/c++/13/bits/ostream.tcc:
-
-/usr/include/c++/13/numbers:
-
-/usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
+/usr/include/c++/13/bits/hashtable.h:
 
 _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 
@@ -1215,9 +1229,17 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
-/usr/include/c++/13/bits/std_abs.h:
+/usr/include/c++/13/ext/string_conversions.h:
 
-/usr/include/c++/13/bits/parse_numbers.h:
+/usr/include/c++/13/ext/type_traits.h:
+
+/usr/include/c++/13/functional:
+
+/usr/include/c++/13/ios:
+
+_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
+
+/usr/include/c++/13/iostream:
 
 /usr/include/c++/13/istream:
 
@@ -1258,6 +1280,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 /usr/include/c++/13/tuple:
 
 /usr/include/c++/13/type_traits:
+
+/usr/include/c++/13/bits/allocator.h:
+
+/usr/include/c++/13/unordered_map:
 
 /usr/include/c++/13/bits/stl_heap.h:
 
@@ -1312,6 +1338,12 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 /usr/include/x86_64-linux-gnu/bits/statx.h:
 
 /usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/x86_64-linux-gnu/asm/unistd.h:
 
@@ -1375,8 +1407,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 
 /usr/include/x86_64-linux-gnu/bits/timex.h:
 
-/usr/include/x86_64-linux-gnu/c++/13/bits/cpu_defines.h:
-
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
@@ -1422,25 +1452,3 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
-
-/usr/include/c++/13/any:
-
-/usr/include/c++/13/bits/ranges_util.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_base.h:
-
-/usr/include/x86_64-linux-gnu/bits/signal_ext.h:
-
-/usr/include/c++/13/bits/std_function.h:
-
-/usr/include/c++/13/bits/char_traits.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/ctype_inline.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/error_constants.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/gthr-default.h:
