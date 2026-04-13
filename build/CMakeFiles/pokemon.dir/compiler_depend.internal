@@ -4,6 +4,10 @@
 CMakeFiles/pokemon.dir/main.cpp.o
  /home/johnmasi/pokemon/main.cpp
  /home/johnmasi/pokemon/include/attributes.h
+ /home/johnmasi/pokemon/include/data.h
+ /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/types.h
+ /home/johnmasi/pokemon/include/attributes.h
  /home/johnmasi/pokemon/include/dmg.h
  /home/johnmasi/pokemon/include/move.h
  /home/johnmasi/pokemon/include/team.h

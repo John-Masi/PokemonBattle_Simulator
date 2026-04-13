@@ -38,7 +38,7 @@ struct Effect {
   uint16_t stat_mod[6] = {0,0,0,0,0,0};  
   ETag etag = ETag::NILL;
 
-  explicit Effect(const std::string& move_Name,uint8_t pp,uint8_t accuracy,const Type& move_Type = Type::normal) 
+  explicit Effect(const std::string& move_Name,uint8_t pp,uint8_t accuracy) 
     : move_Name(move_Name), move_Type(move_Type), pp(pp), accuracy(accuracy){}
   
   // Take in the targets pokemon and their dmg calc and set it to zero then set their effect* to nullptr after the turn 

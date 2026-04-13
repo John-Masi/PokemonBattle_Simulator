@@ -219,4 +219,8 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/bits/ranges_uninitialized.h \
  /usr/include/c++/13/pstl/glue_memory_defs.h \
  /home/johnmasi/pokemon/src/../include/dmg.h \
- /home/johnmasi/pokemon/src/player.hpp
+ /home/johnmasi/pokemon/src/player.hpp \
+ /home/johnmasi/pokemon/include/data.h \
+ /home/johnmasi/pokemon/include/attributes.h \
+ /home/johnmasi/pokemon/include/move.h \
+ /home/johnmasi/pokemon/include/types.h
