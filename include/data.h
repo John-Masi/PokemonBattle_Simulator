@@ -24,9 +24,19 @@ namespace EffectFunctions {
   void protect() {
 
   }
-  
-  void sword_dance() {
 
+  void trick_room() {
+
+  }
+  
+  // Buff pokemons attack stat
+  void sword_dance(Pokemon& p,int count = 0) {
+    if(count <= 2) {
+        p.sp.stats[0] += 2;
+    }
+    else{
+      std::cout << "Cannont buff attack anymore";
+    }
   }
 };
 

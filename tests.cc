@@ -2,9 +2,14 @@
 #include "include/data.h"
 #include "include/team.h"
 
+TEST(MoveEffectContainer,BasicAssertions) {
+  Pokemon charman{"Charmander",SpeciesTable::charmander};
+  charman.learnAttk(MoveTable::tackle);
+  charman.learnAttk(MoveTable::tackle);
+  charman.learnEffect(EffectTable::p_effect);
 
-
-
+  EXPECT_EQ(charman.moves.size(),3);
+}
 
 // Tests for team struct 
 TEST(FaintTest,BasicAssertions) {
@@ -22,6 +27,7 @@ TEST(FaintTest,BasicAssertions) {
 
   EXPECT_EQ(t.teamFainted(),true);
 }
+
 TEST(AddMember,BasicAssertions) {
   Team t0;
   t0.addMember("TestMon_7",SpeciesTable::dragonite);

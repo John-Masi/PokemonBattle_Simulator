@@ -34,7 +34,7 @@ inline void Team::printTeam() const {
 }
 
 inline bool Team::teamFainted() {
-  auto count = std::ranges::count_if(team.begin(),team.end(),[](const std::shared_ptr<Pokemon>& p) { return p->sp.stats[0] == 0; });
+  auto count = std::ranges::count_if(team.begin(),team.end(),[](const std::shared_ptr<Pokemon>& p) { return p->hp == 0; });
 
   if(count == 6) {
     return true;

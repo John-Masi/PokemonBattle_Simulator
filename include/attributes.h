@@ -105,7 +105,7 @@ struct Pokemon {
   uint16_t ivs[6] = {0,0,0,0,0,0};
   uint16_t level{1};
   uint16_t exp{1};
-  uint16_t hp{1};
+  uint16_t hp{0};
   Pokemon(const std::string& name,Species& sp,const std::optional<EffortValues> ev = std::nullopt): name(name), sp(sp){
     if(ev.has_value()) {
       for(int i = 0; i < 3; i ++) {

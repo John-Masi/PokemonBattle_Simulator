@@ -1,5 +1,7 @@
+add_test([=[MoveEffectContainer.BasicAssertions]=]  /home/johnmasi/pokemon/build/tests [==[--gtest_filter=MoveEffectContainer.BasicAssertions]==] --gtest_also_run_disabled_tests)
+set_tests_properties([=[MoveEffectContainer.BasicAssertions]=]  PROPERTIES WORKING_DIRECTORY /home/johnmasi/pokemon/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[FaintTest.BasicAssertions]=]  /home/johnmasi/pokemon/build/tests [==[--gtest_filter=FaintTest.BasicAssertions]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[FaintTest.BasicAssertions]=]  PROPERTIES WORKING_DIRECTORY /home/johnmasi/pokemon/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
 add_test([=[AddMember.BasicAssertions]=]  /home/johnmasi/pokemon/build/tests [==[--gtest_filter=AddMember.BasicAssertions]==] --gtest_also_run_disabled_tests)
 set_tests_properties([=[AddMember.BasicAssertions]=]  PROPERTIES WORKING_DIRECTORY /home/johnmasi/pokemon/build SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  tests_TESTS FaintTest.BasicAssertions AddMember.BasicAssertions)
+set(  tests_TESTS MoveEffectContainer.BasicAssertions FaintTest.BasicAssertions AddMember.BasicAssertions)
