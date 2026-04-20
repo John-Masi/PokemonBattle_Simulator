@@ -6,6 +6,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
@@ -308,8 +309,17 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
   /home/johnmasi/pokemon/include/data.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
+  /home/johnmasi/pokemon/include/attributes.h \
+  /home/johnmasi/pokemon/include/dmg.h \
+  /home/johnmasi/pokemon/include/move.h \
+  /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
+  /home/johnmasi/pokemon/include/team.h \
+  /home/johnmasi/pokemon/include/types.h \
+  /home/johnmasi/pokemon/src/trainer.hpp \
   /usr/include/alloca.h \
   /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
@@ -833,9 +843,7 @@ _deps/googletest-src/googletest/include/gtest/gtest-test-part.h:
 
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:
 
-/usr/include/c++/13/ext/concurrence.h:
-
-/usr/include/c++/13/pstl/glue_algorithm_defs.h:
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/c++/13/cctype:
 
@@ -981,6 +989,10 @@ _deps/googletest-src/googletest/include/gtest/gtest.h:
 
 /usr/include/c++/13/numbers:
 
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/c++/13/cwctype:
+
 /usr/include/c++/13/bits/basic_string.h:
 
 /usr/include/c++/13/bits/chrono.h:
@@ -1023,16 +1035,6 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 /home/johnmasi/pokemon/include/move.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/asm-generic/int-ll64.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
-
-/usr/include/c++/13/iosfwd:
-
 /usr/include/c++/13/ext/aligned_buffer.h:
 
 /home/johnmasi/pokemon/src/trainer.hpp:
@@ -1049,17 +1051,25 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 /usr/include/c++/13/backward/auto_ptr.h:
 
-/home/johnmasi/pokemon/include/nature.h:
-
-/usr/include/c++/13/bits/stringfwd.h:
-
-/usr/include/c++/13/bits/iterator_concepts.h:
-
 /usr/include/c++/13/bits/allocated_ptr.h:
 
 /usr/include/c++/13/bit:
 
 /usr/include/c++/13/bits/basic_string.tcc:
+
+/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
+
+/usr/include/c++/13/bits/stl_pair.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/home/johnmasi/pokemon/src/trainer.cpp:
+
+/home/johnmasi/pokemon/include/nature.h:
+
+/usr/include/c++/13/bits/stringfwd.h:
+
+/usr/include/c++/13/bits/iterator_concepts.h:
 
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
@@ -1068,6 +1078,10 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 /usr/include/c++/13/bits/ostream.tcc:
 
 /home/johnmasi/pokemon/include/team.h:
+
+/usr/include/wctype.h:
+
+/usr/include/sched.h:
 
 /usr/include/c++/13/cerrno:
 
@@ -1083,25 +1097,21 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/c++/13/cwchar:
 
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+/usr/include/c++/13/bits/predefined_ops.h:
 
-/usr/include/c++/13/cwctype:
+/usr/include/asm-generic/int-ll64.h:
 
-/usr/include/sched.h:
+/usr/include/c++/13/bits/ranges_cmp.h:
 
-/usr/include/wctype.h:
+/usr/include/x86_64-linux-gnu/bits/signum-generic.h:
 
-/usr/include/x86_64-linux-gnu/bits/signum-arch.h:
-
-/usr/include/c++/13/bits/stl_pair.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
-/home/johnmasi/pokemon/src/trainer.cpp:
+/usr/include/c++/13/iosfwd:
 
 /usr/include/alloca.h:
 
 /usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/home/johnmasi/pokemon/include/species.h:
 
 /usr/include/c++/13/algorithm:
 
@@ -1218,6 +1228,10 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 /usr/include/wchar.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
+
+/usr/include/c++/13/ext/concurrence.h:
+
+/usr/include/c++/13/pstl/glue_algorithm_defs.h:
 
 /home/johnmasi/pokemon/include/data.h:
 
@@ -1454,5 +1468,3 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/c++/13/bits/exception_defines.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:

@@ -6,11 +6,13 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
   /home/johnmasi/pokemon/include/data.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/include/attributes.h \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/src/battle.hpp \
@@ -294,6 +296,7 @@ CMakeFiles/pokemon.dir/src/battle.cpp.o: /home/johnmasi/pokemon/src/battle.cpp \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/src/battle.hpp \
@@ -580,6 +583,7 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
+  /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
@@ -897,6 +901,8 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/c++/13/cstdlib:
@@ -1027,6 +1033,8 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/bits/move.h:
 
+/usr/include/c++/13/bits/memoryfwd.h:
+
 /usr/include/c++/13/variant:
 
 /usr/include/c++/13/bits/atomic_lockfree_defines.h:
@@ -1045,26 +1053,6 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /home/johnmasi/pokemon/include/move.h:
 
-/usr/include/c++/13/bits/predefined_ops.h:
-
-/usr/include/c++/13/bits/ranges_cmp.h:
-
-/usr/include/c++/13/iosfwd:
-
-/usr/include/c++/13/bits/basic_ios.tcc:
-
-/usr/include/c++/13/pstl/execution_defs.h:
-
-/usr/include/c++/13/ext/aligned_buffer.h:
-
-/home/johnmasi/pokemon/src/trainer.hpp:
-
-/usr/include/locale.h:
-
-/usr/include/c++/13/bits/utility.h:
-
-/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
-
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
@@ -1081,9 +1069,9 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/bits/basic_string.tcc:
 
-/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+/usr/include/c++/13/bits/basic_ios.tcc:
 
-/usr/include/c++/13/algorithm:
+/usr/include/c++/13/pstl/execution_defs.h:
 
 /home/johnmasi/pokemon/include/nature.h:
 
@@ -1094,6 +1082,16 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/c++/13/bits/algorithmfwd.h:
+
+/home/johnmasi/pokemon/src/trainer.hpp:
+
+/usr/include/c++/13/ext/aligned_buffer.h:
+
+/usr/include/locale.h:
+
+/usr/include/c++/13/bits/utility.h:
+
+/usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
 /usr/include/c++/13/bits/ostream.tcc:
 
@@ -1115,15 +1113,31 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/cwchar:
 
-/home/johnmasi/pokemon/src/battle.hpp:
+/usr/include/c++/13/bits/predefined_ops.h:
+
+/usr/include/c++/13/bits/ranges_cmp.h:
+
+/usr/include/c++/13/iosfwd:
+
+/usr/include/c++/13/bits/stl_raw_storage_iter.h:
+
+/usr/include/c++/13/algorithm:
+
+/home/johnmasi/pokemon/include/species.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
+
+/home/johnmasi/pokemon/main.cpp:
+
+/usr/include/c++/13/bits/basic_string.h:
+
+/usr/include/x86_64-linux-gnu/bits/endianness.h:
+
+/usr/include/c++/13/array:
 
 /usr/include/c++/13/bits/hash_bytes.h:
 
-/usr/include/c++/13/bits/alloc_traits.h:
-
-/usr/include/c++/13/bits/concept_check.h:
-
-/usr/include/c++/13/array:
+/home/johnmasi/pokemon/src/battle.hpp:
 
 /usr/include/c++/13/bits/stl_iterator_base_funcs.h:
 
@@ -1133,9 +1147,9 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/c++/13/bits/ranges_util.h:
 
-/usr/include/c++/13/bits/basic_string.h:
+/usr/include/c++/13/bits/alloc_traits.h:
 
-/usr/include/x86_64-linux-gnu/bits/endianness.h:
+/usr/include/c++/13/bits/concept_check.h:
 
 /usr/include/alloca.h:
 
@@ -1154,10 +1168,6 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /usr/include/c++/13/bits/cxxabi_forced.h:
 
 /usr/include/c++/13/bits/localefwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/FILE.h:
-
-/home/johnmasi/pokemon/main.cpp:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
 
@@ -1216,8 +1226,6 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 /usr/include/c++/13/bits/shared_ptr_base.h:
 
 /usr/include/wchar.h:
-
-/usr/include/c++/13/bits/memoryfwd.h:
 
 /usr/include/c++/13/ext/alloc_traits.h:
 
@@ -1367,17 +1375,15 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
 /usr/include/x86_64-linux-gnu/bits/locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/sched.h:
 
-/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
-
 /usr/include/time.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/x86_64-linux-gnu/bits/setjmp.h:
 

@@ -1,6 +1,26 @@
 #include <gtest/gtest.h>
 #include "include/data.h"
 #include "include/team.h"
+#include "src/trainer.hpp"
+
+TEST(AttkScoreTest,BasicAssertions) {
+  Team team;
+
+  team.addMember("Dragonite",SpeciesTable::dragonite);
+  team.team[0]->learnAttk(MoveTable::tackle);
+
+  Trainer trainer{team};
+  //std::cout << trainer.scoreATTK(trainer.team.team[0]->moves[0],trainer.team.team[0]);
+}
+
+TEST(ShouldSwapTest,BasicAssertions) {
+  auto squirtle = std::make_shared<Pokemon>("squirtle",SpeciesTable::squirtle);
+  Team team;
+  team.addMember("Charmander",SpeciesTable::charmander);
+  Trainer t1{team};
+
+  EXPECT_EQ(t1.shouldSwap(squirtle),true);
+}
 
 TEST(MoveEffectContainer,BasicAssertions) {
   Pokemon charman{"Charmander",SpeciesTable::charmander};

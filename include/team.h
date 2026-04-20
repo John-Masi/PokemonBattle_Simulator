@@ -11,12 +11,13 @@
 struct Team {
    std::vector<std::shared_ptr<Pokemon>> team;
    // Current Status effect on a given team ex: protect, light screen.
-   Effect *currentEffect{nullptr};
+   std::shared_ptr<Pokemon> leader;
     
    Team() {
 
    }
-   
+
+   void swapLeader();
    void printTeam() const;
    bool teamFainted();
    void addMember(const std::string& name,Species& sp);
@@ -24,7 +25,8 @@ struct Team {
 };
 
 inline void Team::addMember(const std::string& name,Species& sp) {
-  team.push_back(std::make_shared<Pokemon>("name",sp));
+  team.push_back(std::make_shared<Pokemon>(name,sp));
+  leader = team[0];
 }
 
 inline void Team::printTeam() const {

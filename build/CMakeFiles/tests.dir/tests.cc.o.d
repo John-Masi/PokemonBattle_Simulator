@@ -315,4 +315,12 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
  /home/johnmasi/pokemon/include/nature.h \
  /home/johnmasi/pokemon/include/species.h \
  /home/johnmasi/pokemon/include/team.h /usr/include/c++/13/ranges \
- /usr/include/c++/13/span
+ /usr/include/c++/13/span /home/johnmasi/pokemon/src/trainer.hpp \
+ /home/johnmasi/pokemon/src/../include/attributes.h \
+ /home/johnmasi/pokemon/src/../include/move.h \
+ /home/johnmasi/pokemon/src/../include/types.h \
+ /home/johnmasi/pokemon/src/../include/nature.h \
+ /home/johnmasi/pokemon/src/../include/species.h \
+ /home/johnmasi/pokemon/src/../include/team.h \
+ /home/johnmasi/pokemon/src/../include/attributes.h \
+ /home/johnmasi/pokemon/src/../include/dmg.h
