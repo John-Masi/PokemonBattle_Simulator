@@ -5,6 +5,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /home/johnmasi/pokemon/include/attributes.h \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
+  /home/johnmasi/pokemon/include/nature.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/src/trainer.hpp \
@@ -306,6 +307,7 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
   /home/johnmasi/pokemon/include/attributes.h \
   /home/johnmasi/pokemon/include/data.h \
   /home/johnmasi/pokemon/include/move.h \
+  /home/johnmasi/pokemon/include/nature.h \
   /home/johnmasi/pokemon/include/team.h \
   /home/johnmasi/pokemon/include/types.h \
   /usr/include/alloca.h \
@@ -851,12 +853,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-printers.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_FILE.h:
 
-/usr/include/asm-generic/types.h:
-
-/usr/include/asm-generic/bitsperlong.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
-
 /usr/include/c++/13/concepts:
 
 /usr/include/c++/13/memory:
@@ -999,14 +995,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h:
 
 /usr/include/x86_64-linux-gnu/asm/errno.h:
 
-/home/johnmasi/pokemon/include/data.h:
-
-/usr/include/c++/13/ext/numeric_traits.h:
-
-/usr/include/c++/13/bits/stl_iterator.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
-
 /usr/include/c++/13/bits/locale_facets.h:
 
 /usr/include/c++/13/backward/binders.h:
@@ -1022,6 +1010,18 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 /usr/include/c++/13/bits/alloc_traits.h:
 
 /usr/include/c++/13/bits/concept_check.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/13/bits/node_handle.h:
+
+/usr/include/strings.h:
+
+/usr/include/signal.h:
+
+/usr/include/c++/13/iomanip:
+
+/home/johnmasi/pokemon/include/move.h:
 
 /usr/include/c++/13/bits/predefined_ops.h:
 
@@ -1046,6 +1046,10 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 /usr/include/c++/13/bits/basic_ios.h:
 
 /usr/include/x86_64-linux-gnu/bits/time64.h:
+
+/usr/include/c++/13/backward/auto_ptr.h:
+
+/home/johnmasi/pokemon/include/nature.h:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
@@ -1073,27 +1077,15 @@ _deps/googletest-src/googletest/include/gtest/internal/gtest-port.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/strings.h:
-
-/usr/include/signal.h:
-
-/usr/include/c++/13/iomanip:
-
-/home/johnmasi/pokemon/include/move.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/c++/13/bits/node_handle.h:
-
-/usr/include/x86_64-linux-gnu/asm/posix_types.h:
-
-/usr/include/c++/13/cwctype:
-
 _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/c++/13/cwchar:
+
+/usr/include/x86_64-linux-gnu/asm/posix_types.h:
+
+/usr/include/c++/13/cwctype:
 
 /usr/include/sched.h:
 
@@ -1106,8 +1098,6 @@ _deps/googletest-src/googletest/include/gtest/gtest-matchers.h:
 /usr/include/x86_64-linux-gnu/bits/errno.h:
 
 /home/johnmasi/pokemon/src/trainer.cpp:
-
-/usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/alloca.h:
 
@@ -1229,6 +1219,20 @@ _deps/googletest-src/googletest/include/gtest/gtest-message.h:
 
 /usr/include/c++/13/bits/memoryfwd.h:
 
+/home/johnmasi/pokemon/include/data.h:
+
+/usr/include/c++/13/bits/stl_iterator.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
+
+/usr/include/c++/13/ext/numeric_traits.h:
+
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/sigset_t.h:
+
 /usr/include/c++/13/ext/string_conversions.h:
 
 /usr/include/c++/13/ext/type_traits.h:
@@ -1258,6 +1262,10 @@ _deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h:
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
 /usr/include/c++/13/pstl/pstl_config.h:
+
+/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
 /usr/include/c++/13/ranges:
 
@@ -1448,7 +1456,3 @@ _deps/googletest-src/googletest/include/gtest/gtest-death-test.h:
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/c++/13/bits/atomic_word.h:

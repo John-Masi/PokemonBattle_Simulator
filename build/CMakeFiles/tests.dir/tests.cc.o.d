@@ -312,5 +312,7 @@ CMakeFiles/tests.dir/tests.cc.o: /home/johnmasi/pokemon/tests.cc \
  /usr/include/c++/13/pstl/glue_algorithm_defs.h \
  /home/johnmasi/pokemon/include/move.h \
  /home/johnmasi/pokemon/include/types.h \
+ /home/johnmasi/pokemon/include/nature.h \
+ /home/johnmasi/pokemon/include/species.h \
  /home/johnmasi/pokemon/include/team.h /usr/include/c++/13/ranges \
  /usr/include/c++/13/span

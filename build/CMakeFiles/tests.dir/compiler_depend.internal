@@ -6,6 +6,7 @@ CMakeFiles/tests.dir/src/trainer.cpp.o
  /home/johnmasi/pokemon/include/attributes.h
  /home/johnmasi/pokemon/include/dmg.h
  /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/nature.h
  /home/johnmasi/pokemon/include/team.h
  /home/johnmasi/pokemon/include/types.h
  /home/johnmasi/pokemon/src/trainer.hpp
@@ -308,6 +309,7 @@ CMakeFiles/tests.dir/tests.cc.o
  /home/johnmasi/pokemon/include/attributes.h
  /home/johnmasi/pokemon/include/data.h
  /home/johnmasi/pokemon/include/move.h
+ /home/johnmasi/pokemon/include/nature.h
  /home/johnmasi/pokemon/include/team.h
  /home/johnmasi/pokemon/include/types.h
  /usr/include/alloca.h

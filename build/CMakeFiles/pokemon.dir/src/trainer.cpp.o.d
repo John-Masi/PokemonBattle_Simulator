@@ -187,6 +187,8 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/array \
  /home/johnmasi/pokemon/src/../include/types.h \
+ /home/johnmasi/pokemon/src/../include/nature.h \
+ /home/johnmasi/pokemon/src/../include/species.h \
  /home/johnmasi/pokemon/src/../include/team.h \
  /home/johnmasi/pokemon/src/../include/attributes.h \
  /usr/include/c++/13/ranges /usr/include/c++/13/iterator \

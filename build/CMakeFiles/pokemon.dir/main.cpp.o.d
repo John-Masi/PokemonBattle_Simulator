@@ -187,6 +187,8 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /usr/include/c++/13/bits/node_handle.h \
  /usr/include/c++/13/bits/erase_if.h /usr/include/c++/13/array \
  /home/johnmasi/pokemon/src/../include/types.h \
+ /home/johnmasi/pokemon/src/../include/nature.h \
+ /home/johnmasi/pokemon/src/../include/species.h \
  /home/johnmasi/pokemon/src/../include/team.h \
  /home/johnmasi/pokemon/src/../include/attributes.h \
  /usr/include/c++/13/ranges /usr/include/c++/13/iterator \
@@ -230,4 +232,6 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
  /home/johnmasi/pokemon/include/data.h \
  /home/johnmasi/pokemon/include/attributes.h \
  /home/johnmasi/pokemon/include/move.h \
- /home/johnmasi/pokemon/include/types.h
+ /home/johnmasi/pokemon/include/types.h \
+ /home/johnmasi/pokemon/include/nature.h \
+ /home/johnmasi/pokemon/include/species.h
