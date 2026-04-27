@@ -6,13 +6,6 @@
 #ifndef BATTLE_HPP
 #define BATTLE_HPP
 
-// Player turn, Trainer turn, battle end 
-enum class b_State {
-  p_turn,
-  t_turn,
-  b_end,
-};
-
 class Battle {
       public:
         // Current pokemon battleing 
@@ -27,9 +20,7 @@ class Battle {
         }
         ~Battle() = default;
       
-        void turn();
         void battle();
-        std::optional<Move> select_Move();
 };
 
 #endif 
