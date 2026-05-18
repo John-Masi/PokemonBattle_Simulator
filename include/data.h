@@ -17,7 +17,23 @@ namespace SpeciesTable {
   Species caterpie{30,35,45,20,20,Type::bug};
   Species metapod{20,55,30,25,25,Type::bug};
   Species butterfree{45,50,70,80,90,Type::bug,Type::flying};
+  Species weedle{40,35,50,20,20,Type::bug,Type::poison};
+  Species kakuna{25,50,35,25,25,Type::bug,Type::poison};
+  Species beedrill{90,40,75,80,45,Type::bug,Type::poison};
+  Species pidgey{45,40,56,35,35,Type::flying};
+  Species pidgeotto{60,55,71,50,50,Type::flying};
+  Species pidgeot{80,75,101,70,70,Type::flying};
+
+  Species arcanine{110,80,95,80,100,Type::fire};
+  Species weezing{90,120,60,70,85,Type::poison};
+  Species raichu{90,55,110,80,90,Type::electric};
+  Species blaziken{70,120,80,70,110,Type::fire,Type::fighting};
+  Species ditto{48,48,48,48,48,Type::normal};
+  Species articuno{85,100,85,125,85Type::flying,Type::ice};
+  Species zapdos{90,85,100,90,125,Type::electric,Type::flying};
+  Species moltress{100,90,90,85,125,Type::fire,Type::flying};
   Species dragonite{134,95,80,100,100,Type::dragon,Type::flying};
+
 };
 
 namespace EffectFunctions {
@@ -48,6 +64,13 @@ namespace MoveTable {
   // Move (name,type,pp,attk,accuracy,special)
   Move tackle{"Tackle",Type::normal,4,40,100};
   Move dragon_breath{"Dragon Breath",Type::dragon,20,60,100};
+
+};
+
+
+// Premade teams
+namespace Teams {
+
 
 };
 

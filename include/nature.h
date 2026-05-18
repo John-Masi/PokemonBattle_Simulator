@@ -2,9 +2,8 @@
 #define NATURE_H
 
 struct Nature {
-    int inc_stat{};
-    int dec_stat{};
-    constexpr explicit Nature(int inc_stat,int dec_stat) : inc_stat(inc_stat), dec_stat(dec_stat){}
+    const int inc_stat, dec_stat = {};
+    constexpr explicit Nature(const int inc_stat,const int dec_stat) : inc_stat(inc_stat), dec_stat(dec_stat){}
 };
 
 namespace NatureTable {

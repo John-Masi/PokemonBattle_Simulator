@@ -8,31 +8,40 @@
 #ifndef TEAM
 #define TEAM
 
-struct Team {
-   std::vector<std::shared_ptr<Pokemon>> team;
-   // Current Status effect on a given team ex: protect, light screen.
-   std::shared_ptr<Pokemon> leader;
-    
-   Team() {
 
-   }
+struct Team {
+    
+  // TODO: Find a cleaner alternative
+  // For some reason i do not like this   
+  // Create a static container of the team and then during the battle return the teams in global scope since the program should end when one team faints
+  std::vector<std::shared_ptr<Pokemon>> team;
+  std::shared_ptr<Pokemon> leader;
+  Team() {
+
+  }
 
    void swapLeader();
    void printTeam() const;
    bool teamFainted();
    void addMember(const std::string& name,Species& sp);
-   void triggerEffect();
 };
+
+
 
 inline void Team::addMember(const std::string& name,Species& sp) {
   team.push_back(std::make_shared<Pokemon>(name,sp));
   leader = team[0];
 }
 
+
+// TODO: Create funcs that just take in a struct Team
+
+// Print team for trainer battle
 inline void Team::printTeam() const {
     std::for_each(team.begin(),team.end(),[](const std::shared_ptr<Pokemon>& p) { std::cout << p->name << " " << " lvl: " << p->level; });
 }
 
+// Check if a trainers team is fainted or not
 inline bool Team::teamFainted() {
   auto count = std::ranges::count_if(team.begin(),team.end(),[](const std::shared_ptr<Pokemon>& p) { return p->hp == 0; });
 

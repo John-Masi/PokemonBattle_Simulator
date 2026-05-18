@@ -10,7 +10,6 @@ class Battle {
       public:
         // Current pokemon battleing 
         mutable bool start{true};
-        b_State state{b_State::p_turn};
         Player player;
         Trainer trainer;
         // If either teams are all hp = 0 or not
