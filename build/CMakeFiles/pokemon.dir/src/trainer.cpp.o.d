@@ -190,6 +190,7 @@ CMakeFiles/pokemon.dir/src/trainer.cpp.o: \
  /home/johnmasi/pokemon/src/../include/nature.h \
  /home/johnmasi/pokemon/src/../include/species.h \
  /home/johnmasi/pokemon/src/../include/team.h \
+ /home/johnmasi/pokemon/src/../include/data.h \
  /home/johnmasi/pokemon/src/../include/attributes.h \
  /usr/include/c++/13/ranges /usr/include/c++/13/iterator \
  /usr/include/c++/13/bits/stream_iterator.h /usr/include/c++/13/span \

@@ -29,8 +29,8 @@ namespace SpeciesTable {
   Species raichu{90,55,110,80,90,Type::electric};
   Species blaziken{70,120,80,70,110,Type::fire,Type::fighting};
   Species ditto{48,48,48,48,48,Type::normal};
-  Species articuno{85,100,85,125,85Type::flying,Type::ice};
-  Species zapdos{90,85,100,90,125,Type::electric,Type::flying};
+  Species articuno{85,100,85,125,85,Type::flying,Type::ice};
+
   Species moltress{100,90,90,85,125,Type::fire,Type::flying};
   Species dragonite{134,95,80,100,100,Type::dragon,Type::flying};
 
@@ -64,13 +64,6 @@ namespace MoveTable {
   // Move (name,type,pp,attk,accuracy,special)
   Move tackle{"Tackle",Type::normal,4,40,100};
   Move dragon_breath{"Dragon Breath",Type::dragon,20,60,100};
-
-};
-
-
-// Premade teams
-namespace Teams {
-
 
 };
 

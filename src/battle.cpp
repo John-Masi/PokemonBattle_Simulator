@@ -9,8 +9,6 @@ void Battle::battle() {
     
 
     std::cout << "Please select move";
-    team.team.printTeam();
-    player.team.printTeam();
 
     // TODO: Handle case when the pokemon on the field is ditto
 

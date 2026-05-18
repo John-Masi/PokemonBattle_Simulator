@@ -9,6 +9,7 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
   /home/johnmasi/pokemon/include/species.h \
   /home/johnmasi/pokemon/include/types.h \
   /home/johnmasi/pokemon/include/attributes.h \
+  /home/johnmasi/pokemon/include/data.h \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
@@ -293,6 +294,7 @@ CMakeFiles/pokemon.dir/main.cpp.o: /home/johnmasi/pokemon/main.cpp \
 
 CMakeFiles/pokemon.dir/src/battle.cpp.o: /home/johnmasi/pokemon/src/battle.cpp \
   /home/johnmasi/pokemon/include/attributes.h \
+  /home/johnmasi/pokemon/include/data.h \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \
@@ -580,6 +582,7 @@ CMakeFiles/pokemon.dir/src/player.cpp.o: /home/johnmasi/pokemon/src/player.cpp \
 
 CMakeFiles/pokemon.dir/src/trainer.cpp.o: /home/johnmasi/pokemon/src/trainer.cpp \
   /home/johnmasi/pokemon/include/attributes.h \
+  /home/johnmasi/pokemon/include/data.h \
   /home/johnmasi/pokemon/include/dmg.h \
   /home/johnmasi/pokemon/include/move.h \
   /home/johnmasi/pokemon/include/nature.h \

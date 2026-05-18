@@ -15,6 +15,8 @@
 #ifndef ATTRIBUTES_H
 #define ATTRIBUTES_H
 
+using Moves = std::variant<Move,Effect>;
+
 enum stat_tag {
   ATTACK,
   DEF,
@@ -37,7 +39,6 @@ struct EffortValues {
   }
 };
 
-using Moves = std::variant<Move,Effect>;
 struct Pokemon {
   Species sp;
   std::vector<Moves> moves;
