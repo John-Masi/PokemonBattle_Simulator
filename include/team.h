@@ -9,9 +9,7 @@
 #define TEAM
 
 struct Team {
-    
-  // TODO: Find a cleaner alternative
-  // Remove struct then reactor methods into general functions
+
   std::vector<std::shared_ptr<Pokemon>> team;
   std::shared_ptr<Pokemon> leader;
   Team() {
@@ -28,8 +26,6 @@ inline void Team::addMember(const std::string& name,Species& sp) {
   team.push_back(std::make_shared<Pokemon>(name,sp));
   leader = team[0];
 }
-
-// TODO: Create funcs that just take in a struct Team
 
 // Print team for trainer battle
 inline void Team::printTeam() const {
