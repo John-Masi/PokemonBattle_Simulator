@@ -41,7 +41,17 @@ namespace EffectFunctions {
 
   }
 
+  // Reverse move order priority
   void trick_room() {
+
+  }
+
+  // 30% chance to paralyze opponent
+  void dragon_breath(Pokemon& p) {
+
+  }
+
+  void shadow_punch(Pokemon& p) {
 
   }
   
@@ -56,14 +66,21 @@ namespace EffectFunctions {
   }
 };
 
+
+// Moves that do contain a effect 
 namespace EffectTable {
-  Effect p_effect{EffectFunctions::protect,"protect",0,0};
+  // Effect (EffectFunction,name,pp,accuracy)
+  Effect Protect{EffectFunctions::protect,"Protect",0,0};
+  Effect SwordDance{EffectFunctions::sword_dance,"SwordDance",0,0};
+  Effect TrickRoom{EffectFunctions::trick_room,"TrickRoom",0,0};
+  Effect DragonBreath{EffectFunctions::dragon_breath,"DragonBreath",20,100};
+  Effect ShadowPunch{EffectFunctions::shadow_punch,"ShadowPunch",20,0}
 };
 
+// Moves that do not contain any effects 
 namespace MoveTable {
   // Move (name,type,pp,attk,accuracy,special)
   Move tackle{"Tackle",Type::normal,4,40,100};
-  Move dragon_breath{"Dragon Breath",Type::dragon,20,60,100};
 
 };
 

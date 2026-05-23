@@ -48,5 +48,3 @@ bool Trainer::shouldSwap(const std::shared_ptr<Pokemon>& p) {
   }
   return false;
 }
-
-
